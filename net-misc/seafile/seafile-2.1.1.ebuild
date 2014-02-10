@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE="gui gtk console server client python"
 
-DEPEND="client? ( net-misc/seafile-client )
+DEPEND="client? ( !net-misc/seafile-client )
 	>=dev-lang/python-2.5[sqlite]
 	( =net-libs/ccnet-${PV}[python,client] )
 	dev-python/simplejson
@@ -45,7 +45,6 @@ src_configure() {
 		$(use_enable gui) \
 		$(use_enable gtk) \
 		$(use_enable server) \
-		$(use_enable client) \
 		$(use_enable python) \
 		$(use_enable console) \ 
 }
