@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>                                                                                                     
+<repositories version="1.0">
+	<repo priority="50" quality="experimental" status="unofficial">
+		<name>rinaldus-overlay</name>
+		<description>Rinaldus overlay with seafile and something 
+else</description>
+		
+<homepage>https://github.com/rinaldus/rinaldus-overlay/</homepage>
+		<owner>
+			<email>forreg@rinaldus.ru</email>
+		</owner>
+		<source 
+type="git">https://github.com/rinaldus/rinaldus-overlay.git</source>
+	</repo>
+</repositories>
