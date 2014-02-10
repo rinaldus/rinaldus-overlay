@@ -14,7 +14,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 
-DEPEND="=net-misc/seafile-${PV}[-client]"
+DEPEND="=net-misc/seafile-${PV}[client]"
 
 RDEPEND=""
 
