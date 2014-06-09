@@ -22,8 +22,6 @@ DEPEND="
 	sys-devel/gettext
 	virtual/pkgconfig
 	dev-libs/jansson
-	dev-libs/libevent
-	client? ( >=net-libs/ccnet-2.1.2[client] )
 	server? ( 	>=net-libs/ccnet-${PV}[server]
 				=dev-python/django-1.5*
 				www-servers/gunicorn	
@@ -43,7 +41,7 @@ pkg_setup() {
 
 src_prepare() {
 	./autogen.sh || die "src_prepare failed"
-	# epatch "${FILESDIR}/${PV}-seafile-admin-datadir-pathfix.patch"
+	epatch "${FILESDIR}/${PV}-seafile-admin-datadir-pathfix.patch"
 }
 
 src_configure() {

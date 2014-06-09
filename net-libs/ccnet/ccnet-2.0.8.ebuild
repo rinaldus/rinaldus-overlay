@@ -12,7 +12,7 @@ SRC_URI="https://github.com/haiwen/${PN}/archive/v${PV}.tar.gz -> ${PN}-${PV}.ta
 
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86"
 IUSE="client server python cluster ldap"
 
 DEPEND="=net-libs/libsearpc-${PV}

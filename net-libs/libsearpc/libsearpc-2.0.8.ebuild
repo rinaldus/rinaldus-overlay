@@ -19,8 +19,7 @@ IUSE=""
 
 DEPEND=">=dev-lang/python-2.5
 	>=dev-libs/glib-2.0
-	dev-libs/jansson
-	virtual/pkgconfig"
+	dev-util/pkgconfig"
 
 RDEPEND=""
 

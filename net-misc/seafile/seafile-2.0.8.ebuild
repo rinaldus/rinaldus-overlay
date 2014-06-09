@@ -12,7 +12,7 @@ SRC_URI="https://github.com/haiwen/${PN}/archive/v${PV}.tar.gz -> ${PN}-${PV}.ta
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86"
 IUSE="gui gtk console server client python"
 
 DEPEND="client? ( !net-misc/seafile-client )
@@ -26,8 +26,7 @@ DEPEND="client? ( !net-misc/seafile-client )
 	www-servers/gunicorn
 	>=net-libs/libevhtp-1.1.6
 	sys-devel/gettext
-	dev-util/pkgconfig
-	>=sys-fs/fuse-2.8.6"
+	dev-util/pkgconfig"
 
 RDEPEND=""
 

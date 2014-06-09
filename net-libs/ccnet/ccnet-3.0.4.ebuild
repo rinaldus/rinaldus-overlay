@@ -12,14 +12,14 @@ SRC_URI="https://github.com/haiwen/${PN}/archive/v${PV}.tar.gz -> ${PN}-${PV}.ta
 
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86"
 IUSE="client server python cluster ldap"
 
 DEPEND="=net-libs/libsearpc-${PV}
 	>=dev-libs/glib-2.0
 	>=dev-lang/vala-0.8
 	dev-db/libzdb
-	dev-util/pkgconfig"
+	virtual/pkgconfig"
 
 RDEPEND=""
 
@@ -34,12 +34,11 @@ src_prepare() {
 
 src_configure() {
 	econf 	$(use_enable server) \
-		$(use_enable client) \
-		$(use_enable python) \
-		$(use_enable cluster) \
-		$(use_enable ldap) \
-		--enable-console \
-		|| die "econf failed"
+			$(use_enable client) \
+			$(use_enable python) \
+			$(use_enable cluster) \
+			$(use_enable ldap) \
+			--enable-console
 }
 
 src_compile() {

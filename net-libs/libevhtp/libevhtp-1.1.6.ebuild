@@ -13,7 +13,7 @@ SRC_URI="https://github.com/ellzey/libevhtp/archive/${PV}.zip"
 
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86"
 IUSE=""
 
 DEPEND=">=dev-libs/libevent-2"

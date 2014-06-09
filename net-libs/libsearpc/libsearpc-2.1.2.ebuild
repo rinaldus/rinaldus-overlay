@@ -14,13 +14,12 @@ SRC_URI="https://github.com/haiwen/${PN}/archive/v${PV}.tar.gz -> ${PN}-${PV}.ta
 
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86"
 IUSE=""
 
 DEPEND=">=dev-lang/python-2.5
 	>=dev-libs/glib-2.0
-	dev-util/pkgconfig
-	dev-libs/jansson"
+	virtual/pkgconfig"
 
 RDEPEND=""
 
