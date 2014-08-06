@@ -15,7 +15,7 @@ LICENSE="GPL-2"
 KEYWORDS="~x86"
 IUSE="client server python cluster ldap"
 
-DEPEND="=net-libs/libsearpc-${PV}
+DEPEND="=net-libs/libsearpc-3.0
 	>=dev-libs/glib-2.0
 	>=dev-lang/vala-0.8
 	dev-db/libzdb
