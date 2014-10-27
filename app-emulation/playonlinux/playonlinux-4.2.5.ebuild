@@ -1,11 +1,11 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/playonlinux/playonlinux-4.1.9.ebuild,v 1.1 2013/02/14 07:11:40 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/playonlinux/playonlinux-4.2.4.ebuild,v 1.1 2014/08/05 00:54:27 zx2c4 Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
+EAPI="5"
+PYTHON_COMPAT=( python2_7 )
 
-inherit eutils python games gnome2-utils
+inherit gnome2-utils python-single-r1 games
 
 MY_PN="PlayOnLinux"
 
@@ -24,7 +24,7 @@ RDEPEND="app-emulation/wine
 	app-arch/p7zip
 	app-arch/unzip
 	app-crypt/gnupg
-	dev-python/wxpython:2.8
+	dev-python/wxpython:2.8[${PYTHON_USEDEP}]
 	|| ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] )
 	net-misc/wget
 	x11-apps/mesa-progs
@@ -44,14 +44,15 @@ S=${WORKDIR}/${PN}
 # Look at debian pkg: http://packages.debian.org/sid/playonlinux
 
 pkg_setup() {
-	python_set_active_version 2
-	python_pkg_setup
+	python-single-r1_pkg_setup
 	games_pkg_setup
 }
 
 src_prepare() {
-	sed -e 's/PYTHON="python"/PYTHON="python2"/' -i playonlinux || die
-	python_convert_shebangs -r 2 .
+	epatch "${FILESDIR}/${PN}-4.2.4-pol-bash.patch"
+	epatch "${FILESDIR}/${PN}-4.2.4-binary-plugin.patch"
+
+	python_fix_shebang .
 
 	# remove playonmac
 	rm etc/{playonmac.icns,terminal.applescript} || die
@@ -67,16 +68,13 @@ src_install() {
 
 	# bash/ install
 	exeinto "${GAMES_DATADIR}/${PN}/bash"
-	doexe bash/*
+	find "${S}/bash" -type f -exec doexe '{}' +
 	exeinto "${GAMES_DATADIR}/${PN}/bash/expert"
-	doexe bash/expert/*
+	find "${S}/bash/expert" -type f -exec doexe '{}' +
 
 	# python/ install
-	exeinto "${GAMES_DATADIR}/${PN}/python"
-	doexe python/*
-	# sub dir without exec permissions
-	insinto "${GAMES_DATADIR}/${PN}/python"
-	doins -r python/lib
+	python_moduleinto "${GAMES_DATADIR}/${PN}"
+	python_domodule python
 
 	# main executable files
 	exeinto "${GAMES_DATADIR}/${PN}"
@@ -88,9 +86,11 @@ src_install() {
 		newicon -s $size etc/${PN}$size.png ${PN}.png
 	done
 
+	doman "${FILESDIR}"/playonlinux{,-pkg}.1
 	dodoc CHANGELOG.md
 
 	games_make_wrapper ${PN} "./${PN}" "${GAMES_DATADIR}/${PN}"
+	games_make_wrapper ${PN}-pkg "./${PN}-pkg" "${GAMES_DATADIR}/${PN}"
 	make_desktop_entry ${PN} ${MY_PN} ${PN} Game
 
 	prepgamesdirs
@@ -102,7 +102,6 @@ pkg_preinst() {
 
 pkg_postinst() {
 	games_pkg_postinst
-	python_mod_optimize "${GAMES_DATADIR}/${PN}"
 	gnome2_icon_cache_update
 }
 
@@ -115,6 +114,5 @@ pkg_prerm() {
 }
 
 pkg_postrm() {
-	python_mod_cleanup "${GAMES_DATADIR}/${PN}"
 	gnome2_icon_cache_update
 }
