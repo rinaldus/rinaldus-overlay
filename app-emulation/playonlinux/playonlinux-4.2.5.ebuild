@@ -48,19 +48,6 @@ pkg_setup() {
 	games_pkg_setup
 }
 
-src_prepare() {
-	epatch "${FILESDIR}/${PN}-4.2.4-pol-bash.patch"
-	epatch "${FILESDIR}/${PN}-4.2.4-binary-plugin.patch"
-
-	python_fix_shebang .
-
-	# remove playonmac
-	rm etc/{playonmac.icns,terminal.applescript} || die
-
-	# remove desktop integration
-	rm etc/{PlayOnLinux.desktop,PlayOnLinux.directory,playonlinux-Programmes.menu} || die
-}
-
 src_install() {
 	# all things without exec permissions
 	insinto "${GAMES_DATADIR}/${PN}"
