@@ -17,7 +17,7 @@ IUSE="console server client python riak fuse"
 
 DEPEND="
 	>=dev-lang/python-2.5[sqlite]
-	>=net-libs/ccnet-3.1.7[python]
+	>=net-libs/ccnet-${PV}[python]
 	>=net-libs/libevhtp-1.1.6
 	sys-devel/gettext
 	virtual/pkgconfig
