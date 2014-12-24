@@ -17,14 +17,14 @@ IUSE="console server client python riak fuse"
 
 DEPEND="
 	>=dev-lang/python-2.5[sqlite]
-	>=net-libs/ccnet-3.1.7[python]
+	>=net-libs/ccnet-${PV}[python]
 	>=net-libs/libevhtp-1.1.6
 	sys-devel/gettext
 	virtual/pkgconfig
 	dev-libs/jansson
 	dev-libs/libevent
 	client? ( >=net-libs/ccnet-2.1.2[client] )
-	server? ( 	>=net-libs/ccnet-${PV}[server]
+	server? ( 	>=net-libs/ccnet-3.1.7[server]
 				=dev-python/django-1.5*
 				www-servers/gunicorn	
 				dev-python/simplejson
