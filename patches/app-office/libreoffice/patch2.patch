@@ -1,0 +1,12 @@
+--- /usr/portage/app-office/libreoffice/libreoffice-4.3.1.2.ebuild	2014-09-17 07:31:04.000000000 +1000
++++ /usr/local/portage/app-office/libreoffice/libreoffice-4.3.1.2.ebuild	2014-09-20 15:13:31.318162601 +1000
+@@ -252,6 +252,9 @@
+ 
+ 	# from master branch
+ 	"${FILESDIR}/${PN}-4.3.1.2-implement--with-system-coinmp.patch"
++
++	# bug 522178 committed in git master
++	"${FILESDIR}/${PN}-4.3.1.2-boost-1.56.0.patch"
+ )
+ 
+ REQUIRED_USE="
