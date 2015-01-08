@@ -1,0 +1,16 @@
+<repo quality="experimental" status="unofficial">
+    <name>rinaldus-overlay</name>
+    <description lang="en">Rinaldus overlay</description>
+    <homepage>https://github.com/rinaldus/rinaldus-overlay/</homepage>
+    <owner type="person">
+      <email>forreg@rinaldus.ru</email>
+      <name>Rinaldus</name>
+    </owner>
+    <source type="git">https://github.com/rinaldus/rinaldus-overlay.git</source>
+</repo>
+<repo quality="experimental" status="unofficial">
+    <name>steam-overlay</name>
+    <description lang="en">Steam overlay</description>
+    <homepage>https://github.com/anyc/steam-overlay</homepage>
+    <source type="git">https://github.com/anyc/steam-overlay.git</source>
+</repo>
