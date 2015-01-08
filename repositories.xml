@@ -9,10 +9,4 @@
     </owner>
     <source type="git">https://github.com/rinaldus/rinaldus-overlay.git</source>
  </repo>
- <repo quality="experimental" status="unofficial">
-    <name>steam</name>
-    <description lang="en">Steam overlay</description>
-    <homepage>https://github.com/anyc/steam-overlay</homepage>
-    <source type="git">https://github.com/anyc/steam-overlay.git</source>
- </repo>
 </repositories>
