@@ -1,5 +1,7 @@
 kde-apps/ark
-kde-apps/ksnapshot
-kde-apps/kmix
-kde-apps/okular
+kde-apps/dolphin
 kde-apps/gwenview
+kde-apps/kmix
+kde-apps/konsole
+kde-apps/ksnapshot
+kde-apps/okular
