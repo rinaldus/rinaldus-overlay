@@ -1,0 +1,7 @@
+app-admin/sudo
+app-admin/rsyslog
+app-misc/screen
+app-portage/eix
+app-portage/genlop
+app-portage/gentoolkit
+app-portage/layman
