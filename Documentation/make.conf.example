@@ -1,0 +1,29 @@
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+CFLAGS="-march=x86-64 -O2 -pipe"
+CXXFLAGS="${CFLAGS}"
+# WARNING: Changing your CHOST is not something that should be done lightly.
+# Please consult http://www.gentoo.org/doc/en/change-chost.xml before changing.
+CHOST="x86_64-pc-linux-gnu"
+# These are the USE flags that were used in addition to what is provided by the
+# profile used for building.
+ACCEPT_LICENSE="*"
+ACCEPT_KEYWORDS="~amd64"
+ABI_X86="64 32"
+CPU_FLAGS_X86="aes avx fma3 fma4 mmx mmxext popcnt sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3 xop"
+USE="aes avx fma3 fma4 mmx mmxext popcnt sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3 xop -bindist pulseaudio webkit samba cups -gnome -spell -bluetooth -semantic-desktop bash-completion -systemd -handbook bash-completion -libav ffmpeg"
+LINGUAS="ru"
+GRUB_PLATFORMS="pc"
+INPUT_DEVICE="evdev"
+VIDEO_CARDS="nvidia"
+PORTDIR="/usr/portage"
+DISTDIR="${PORTDIR}/distfiles"
+PKGDIR="/var/packages"
+MAKEOPTS="-j5"
+EMERGE_DEFAULT_OPTS="-avb --jobs=10 --keep-going=y --binpkg-respect-use=y"
+PORTDIR_OVERLAY="/usr/local/portage $PORTDIR_OVERLAY"
+source /var/lib/layman/make.conf
+
+GENTOO_MIRRORS="http://mirror.yandex.ru/gentoo-distfiles/"
