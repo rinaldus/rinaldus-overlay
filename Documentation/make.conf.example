@@ -24,5 +24,6 @@ PKGDIR="/var/packages"
 MAKEOPTS="-j5"
 EMERGE_DEFAULT_OPTS="-avb --jobs=10 --keep-going=y --binpkg-respect-use=y"
 PORTDIR_OVERLAY="/usr/local/portage $PORTDIR_OVERLAY"
+source /var/lib/layman/make.conf
 
 GENTOO_MIRRORS="http://mirror.yandex.ru/gentoo-distfiles/"
