@@ -10,7 +10,7 @@ www-client/links -X
 x11-drivers/nvidia-drivers multilib gtk2
 media-libs/phonon-vlc qt5
 media-libs/phonon qt5
-net-im/psi extras iconsets plugins 
+net-im/psi extras iconsets plugins webkit
 net-libs/ccnet client python
 net-misc/seafile client
 x11-terms/terminator -gnome
@@ -19,3 +19,4 @@ app-emulation/virtualbox extensions
 media-video/vlc upnp vdpau vaapi lua rtsp vlm httpd -qt4 qt5 ffmpeg postproc
 app-emulation/wine experimental
 sys-boot/grub -multislot
+dev-lang/python sqlite
