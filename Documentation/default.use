@@ -5,7 +5,7 @@ virtual/ffmpeg vaapi threads vdpau
 media-video/ffmpeg vaapi vdpau threads
 media-gfx/gimp -webkit
 media-gfx/imagemagick -pdf
-app-portage/layman mercurial
+app-portage/layman mercurial sync-plugin-portage
 www-client/links -X
 x11-drivers/nvidia-drivers multilib gtk2
 media-libs/phonon-vlc qt5
