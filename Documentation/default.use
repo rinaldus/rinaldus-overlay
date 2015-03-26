@@ -10,7 +10,7 @@ www-client/links -X
 x11-drivers/nvidia-drivers multilib gtk2
 media-libs/phonon-vlc qt5
 media-libs/phonon qt5
-net-im/psi extras iconsets plugins webkit
+net-im/psi extras iconsets plugins webkit -qt5
 net-libs/ccnet client python
 net-misc/seafile client
 x11-terms/terminator -gnome
