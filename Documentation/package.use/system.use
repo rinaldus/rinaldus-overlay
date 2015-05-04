@@ -1,5 +1,6 @@
 app-crypt/heimdal -ssl
 app-crypt/qca gpg
+dev-lang/python sqlite
 dev-libs/elfutils static-libs
 dev-libs/keybinder python
 dev-libs/libpcre pcre16

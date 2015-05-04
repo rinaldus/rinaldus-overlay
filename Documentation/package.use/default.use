@@ -5,13 +5,10 @@ app-emulation/virtualbox extensions
 app-emulation/wine experimental
 app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
-dev-lang/python sqlite
 media-gfx/gimp -webkit
 media-gfx/imagemagick -pdf
-media-libs/phonon qt5
-media-libs/phonon-vlc qt5
 media-video/ffmpeg vaapi vdpau threads
-media-video/vlc upnp vdpau vaapi lua rtsp vlm httpd -qt4 qt5 ffmpeg postproc
+media-video/vlc upnp vdpau vaapi lua rtsp vlm httpd -qt4 ffmpeg postproc
 net-im/psi extras iconsets plugins webkit -qt5
 net-libs/ccnet client python
 net-misc/seafile client
