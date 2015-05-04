@@ -1,0 +1,15 @@
+app-crypt/heimdal -ssl
+app-crypt/qca gpg
+dev-libs/elfutils static-libs
+dev-libs/keybinder python
+dev-libs/libpcre pcre16
+dev-qt/qtcore icu
+dev-qt/qtquickcontrols widgets
+dev-qt/qtwebkit icu qml
+gnome-extra/zenity -webkit
+media-libs/harfbuzz icu
+net-fs/samba client
+net-libs/libproxy -webkit
+sys-libs/ntdb python
+sys-libs/tdb python
+x11-libs/vte python
