@@ -1,0 +1,13 @@
+# This file is useful if you use simple desktop profile and want to install Plasma 5
+app-arch/unzip natspec
+dev-libs/quazip -qt4
+dev-qt/designer declarative
+dev-qt/qtsql mysql
+dev-util/cmake -qt4
+kde-apps/gwenview kipi
+kde-frameworks/knotifyconfig phonon
+kde-plasma/kio-extras phonon
+media-gfx/exiv2 xmp
+media-libs/phonon -designer
+sys-libs/zlib minizip
+x11-misc/sddm -upower

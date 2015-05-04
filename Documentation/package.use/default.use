@@ -1,0 +1,23 @@
+# Create folder /etc/portage/package.use and symlink this file there
+app-admin/conky curl lua
+app-editors/vim python
+app-emulation/virtualbox extensions
+app-emulation/wine experimental
+app-portage/eix optimization strong-optimization
+app-portage/layman mercurial sync-plugin-portage
+dev-lang/python sqlite
+media-gfx/gimp -webkit
+media-gfx/imagemagick -pdf
+media-libs/phonon qt5
+media-libs/phonon-vlc qt5
+media-video/ffmpeg vaapi vdpau threads
+media-video/vlc upnp vdpau vaapi lua rtsp vlm httpd -qt4 qt5 ffmpeg postproc
+net-im/psi extras iconsets plugins webkit -qt5
+net-libs/ccnet client python
+net-misc/seafile client
+sys-boot/grub -multislot
+virtual/ffmpeg vaapi threads vdpau
+www-client/chromium proprietary-codecs
+www-client/links -X
+x11-drivers/nvidia-drivers multilib gtk2
+x11-terms/terminator -gnome
