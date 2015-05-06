@@ -2,6 +2,7 @@
 app-arch/unzip natspec
 dev-libs/quazip -qt4
 dev-qt/designer declarative
+dev-qt/qtmultimedia qml
 dev-qt/qtsql mysql
 dev-util/cmake -qt4
 kde-apps/gwenview kipi
