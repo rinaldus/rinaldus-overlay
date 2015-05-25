@@ -4,6 +4,7 @@ dev-libs/quazip -qt4
 dev-qt/designer declarative
 dev-qt/qtsql mysql
 dev-util/cmake -qt4
+kde-apps/ark dolphin
 kde-apps/gwenview kipi
 kde-frameworks/knotifyconfig phonon
 kde-plasma/kio-extras phonon
