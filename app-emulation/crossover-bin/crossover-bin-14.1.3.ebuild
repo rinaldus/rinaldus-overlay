@@ -1,9 +1,9 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/crossover-bin/crossover-bin-13.2.0-r1.ebuild,v 1.1 2014/11/12 16:39:44 axs Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/crossover-bin/crossover-bin-14.0.3.ebuild,v 1.2 2015/04/08 07:30:31 mgorny Exp $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_6,2_7} )
+PYTHON_COMPAT=( python2_7 )
 PYTHON_REQ_USE="threads"
 
 inherit python-single-r1 unpacker
@@ -35,7 +35,7 @@ REGULAR_DEPS="
 	cups? ( net-print/cups[abi_x86_32(-)] )
 	gsm? ( media-sound/gsm[abi_x86_32(-)] )
 	jpeg? ( virtual/jpeg[abi_x86_32(-)] )
-	lcms? ( media-libs/lcms:0 )
+	lcms? ( media-libs/lcms:2 )
 	ldap? ( net-nds/openldap[abi_x86_32(-)] )
 	gphoto2? ( media-libs/libgphoto2[abi_x86_32(-)] )
 	mp3? ( >=media-sound/mpg123-1.5.0[abi_x86_32(-)] )
@@ -102,8 +102,6 @@ src_unpack() {
 
 src_prepare() {
 	python_fix_shebang .
-	sed -e 's:/usr/local/etc/xdg /etc/xdg::' -i "${WORKDIR}/bin/locate_gui.sh" \
-		 || die "Could not patch ${WORKDIR}/bin/locate_gui.sh"
 
 	# Remove unnecessary files
 	rm -r license.txt guis/ || die "Could not remove files"
@@ -127,17 +125,11 @@ src_install() {
 	insinto /opt/cxoffice/etc
 	doins share/crossover/data/cxoffice.conf
 
-	# Install requisite directories for menus
-	dodir "/usr/share/applications"
-	dodir "/etc/xdg/menus/applications-merged"
-
 	# Install menus
-	XDG_CONFIG_DIRS="${ED}etc/xdg" \
-		XDG_DATA_DIRS="${ED}usr/share" \
-		"${ED}opt/cxoffice/bin/cxmenu" --crossover --install \
+	# XXX: locate_gui.sh automatically detects *-application-merged directories
+	# This means what we install will vary depending on the contents of
+	# /etc/xdg, which is a QA violation. It is not clear how to resolve this.
+	XDG_CONFIG_HOME="/etc/xdg" \
+		"${ED}opt/cxoffice/bin/cxmenu" --destdir="${ED}" --crossover --install \
 		|| die "Could not install menus"
-
-	# Fix menus
-	sed -e "s:${ED}:/:" -i "${ED}usr/share/applications/"* \
-		|| die "Could not fix menus"
 }
