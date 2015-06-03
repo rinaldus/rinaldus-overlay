@@ -10,4 +10,3 @@ kde-frameworks/knotifyconfig phonon
 kde-plasma/kio-extras phonon
 media-gfx/exiv2 xmp
 media-libs/phonon -designer
-media-video/ffmpeg -samba

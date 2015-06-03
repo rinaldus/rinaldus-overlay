@@ -11,6 +11,7 @@ dev-qt/qtquickcontrols widgets
 dev-qt/qtwebkit icu qml
 gnome-extra/zenity -webkit
 media-libs/harfbuzz icu
+media-video/ffmpeg -samba
 net-fs/samba client
 net-libs/libproxy -webkit
 sys-libs/ntdb python
