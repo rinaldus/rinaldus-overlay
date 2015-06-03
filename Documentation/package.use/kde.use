@@ -12,4 +12,3 @@ media-gfx/exiv2 xmp
 media-libs/phonon -designer
 media-video/ffmpeg -samba
 sys-libs/zlib minizip
-x11-misc/sddm -upower
