@@ -15,4 +15,5 @@ net-libs/libproxy -webkit
 sys-libs/ntdb python
 sys-libs/tdb python
 sys-libs/tevent python
+sys-libs/zlib minizip
 x11-libs/vte python
