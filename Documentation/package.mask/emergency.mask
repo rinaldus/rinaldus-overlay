@@ -1,0 +1,1 @@
+=dev-libs/libgcrypt-1.6.3-r1 # https://bugs.gentoo.org/show_bug.cgi?id=551944
