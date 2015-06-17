@@ -5,7 +5,7 @@ app-emulation/virtualbox extensions
 app-emulation/wine experimental
 app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
-mail-client/claws-mail webkit bogofilter
+mail-client/claws-mail webkit spamassassin
 media-gfx/gimp -webkit
 media-gfx/imagemagick -pdf
 media-video/ffmpeg vaapi vdpau threads
