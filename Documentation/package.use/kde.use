@@ -8,5 +8,6 @@ dev-util/cmake -qt4
 kde-apps/gwenview kipi
 kde-frameworks/knotifyconfig phonon
 kde-plasma/kio-extras phonon
+kde-plasma/plasma-desktop -qt4
 media-gfx/exiv2 xmp
 media-libs/phonon -designer
