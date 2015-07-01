@@ -7,6 +7,7 @@ dev-qt/qtsql mysql
 dev-util/cmake -qt4
 kde-apps/gwenview kipi
 kde-frameworks/knotifyconfig phonon
+kde-plasma/breeze -qt4
 kde-plasma/kio-extras phonon
 kde-plasma/plasma-desktop -qt4
 media-gfx/exiv2 xmp
