@@ -1,2 +1,2 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
-=sys-apps/iproute2-4.1.0 # fails to compile
+=net-libs/gnutls-3.3.16 # fails to compile
