@@ -1,2 +1,1 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
-=net-libs/gnutls-3.3.16 # fails to compile
