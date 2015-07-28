@@ -1,2 +1,2 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
-=app-text/poppler-0.34.0 # cups-filters fails to build
+=dev-libs/liborcus-0.9.2 # conflicts with libreoffice
