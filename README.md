@@ -2,6 +2,13 @@
 
 # Install
 
+## Automatic
+
+My overlay is now part of layman's database. Simply type following command to add it:
+layman -a rinaldus-overlay
+
+## Manual
+
 layman -f -o https://raw.github.com/rinaldus/rinaldus-overlay/master/rinaldus-overlay.xml -a rinaldus-overlay
 
 Add url below to your /etc/layman/layman.cfg (in overlays section) to prevent annoying warnings:
