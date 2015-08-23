@@ -17,12 +17,12 @@ if [[ ${PV} == "9999" ]] ; then
 	#KEYWORDS=""
 else
 	MY_P="${PN}-${PV/_/-}"
-	SRC_URI="mirror://sourceforge/${PN}/Source/${MY_P}.tar.bz2"
+	SRC_URI="http://mirrors.ibiblio.org/${PN}/source/1.7/${PN}-${PV}.tar.bz2"
 	KEYWORDS="-* ~amd64 ~x86 ~x86-fbsd"
 	S=${WORKDIR}/${MY_P}
 fi
 
-GV="2.36"
+GV="2.40"
 MV="4.5.6"
 COMPHOLIO_P="wine-staging-${PV}"
 WINE_GENTOO="wine-gentoo-2013.06.24"
