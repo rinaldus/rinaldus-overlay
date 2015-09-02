@@ -14,7 +14,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 
-DEPEND=">=net-misc/seafile-${PV}[client] dev-qt/qtgui:4[client] dev-libs/jansson"
+DEPEND=">=net-misc/seafile-${PV}[client] dev-qt/qtgui:4 dev-libs/jansson"
 
 RDEPEND=""
 
