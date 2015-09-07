@@ -1,2 +1,1 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
-=app-emulation/wine-1.7.50 # World of Warcraft crashes with this version
