@@ -57,6 +57,8 @@ RDEPEND="
 		dev-qt/qtgui:5
 		dev-qt/qtxml:5
 		dev-qt/qtconcurrent:5
+		dev-qt/qtmultimedia:5
+		dev-qt/qtx11extras:5
 		dbus? ( dev-qt/qtdbus:5 )
 		>=app-crypt/qca-2.1:2[qt5]
 		whiteboarding? ( dev-qt/qtsvg:5 )
@@ -67,7 +69,7 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}
 	extras? (
-		sys-devel/qconf
+		>=sys-devel/qconf-1.6_pre1
 	)
 	doc? ( app-doc/doxygen )
 	virtual/pkgconfig
@@ -130,11 +132,6 @@ src_unpack() {
 }
 
 src_prepare() {
-	if use qt5; then
-		sed -i -e 's/qca2/qca2-qt5/' qcm/qca.qcm || die "Failed to patch qca.qcm for qt5"
-		sed -i -e '/depend_prl/d' iris/iris.pri || die "Failed to patch iris/iris.pri for qt5"
-	fi
-
 	if use extras; then
 		cp -a "${WORKDIR}/psi-plus/iconsets" "${S}" || die
 		if use iconsets; then
@@ -188,6 +185,10 @@ src_configure() {
 
 	QTDIR="${EPREFIX}"/usr
 	use qt5 && QTDIR="${EPREFIX}"/usr/$(get_libdir)/qt5
+
+	elog ./configure --prefix="${EPREFIX}"/usr \
+			--qtdir="${QTDIR}" \
+			${myconf}
 
 	./configure \
 		--prefix="${EPREFIX}"/usr \
