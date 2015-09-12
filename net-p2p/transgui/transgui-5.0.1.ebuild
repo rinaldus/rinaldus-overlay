@@ -1,13 +1,13 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=2
 inherit eutils
 
 DESCRIPTION="A uTorrent-like frontend for Transmission daemon"
-HOMEPAGE="http://code.google.com/p/transmisson-remote-gui/"
-SRC_URI="http://transmisson-remote-gui.googlecode.com/files/${P}-src.zip"
+HOMEPAGE="http://sourceforge.net/projects/transgui/"
+SRC_URI="mirror://sourceforge/${PN}/${P}-src.zip"
 
 LICENSE="GPL-2"
 SLOT="0"
