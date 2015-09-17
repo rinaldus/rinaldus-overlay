@@ -8,6 +8,7 @@ dev-libs/keybinder python
 dev-libs/libdbusmenu gtk3
 dev-libs/libpcre pcre16
 dev-libs/libxml2 icu
+dev-libs/quazip -qt4
 dev-qt/qtcore icu
 dev-qt/qtquickcontrols widgets
 dev-qt/qtwebkit icu qml
