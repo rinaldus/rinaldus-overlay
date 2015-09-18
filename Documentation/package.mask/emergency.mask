@@ -1,1 +1,2 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
+=app-crypt/pinentry-0.9.6-r1 # failed to compile
