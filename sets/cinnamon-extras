@@ -1,5 +1,6 @@
 app-arch/xarchiver
 media-gfx/eom
 media-gfx/ristretto
+net-analyzer/ifstat
 x11-misc/screengrab
 x11-themes/gtk-theme-switch
