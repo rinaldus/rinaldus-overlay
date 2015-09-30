@@ -17,6 +17,7 @@ sys-boot/grub -multislot
 virtual/ffmpeg vaapi threads vdpau
 www-client/chromium proprietary-codecs
 www-client/links -X
+www-client/w3m -X -gtk
 x11-drivers/nvidia-drivers multilib gtk2
 x11-misc/sddm -upower
 x11-terms/terminator -gnome
