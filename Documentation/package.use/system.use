@@ -1,4 +1,5 @@
 app-crypt/heimdal -ssl
+app-crypt/pinentry -qt4
 app-crypt/qca gpg
 dev-lang/fpc source
 dev-lang/mono minimal
