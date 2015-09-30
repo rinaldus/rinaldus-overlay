@@ -13,6 +13,7 @@ dev-libs/quazip -qt4
 dev-qt/qtcore icu
 dev-qt/qtquickcontrols widgets
 dev-qt/qtwebkit icu qml
+gnome-base/gnome-vfs -samba
 gnome-extra/zenity -webkit
 media-libs/harfbuzz icu
 media-libs/mesa vaapi vdpau
