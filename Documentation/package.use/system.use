@@ -20,6 +20,7 @@ media-libs/mesa vaapi vdpau
 media-video/ffmpeg -samba
 net-fs/samba client
 net-libs/libproxy -webkit
+net-wireless/wpa_supplicant -qt4 -qt5
 sys-libs/ntdb python
 sys-libs/tdb python
 sys-libs/tevent python
