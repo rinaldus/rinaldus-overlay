@@ -5,6 +5,7 @@ app-emulation/virtualbox extensions
 app-emulation/wine experimental
 app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
+dev-qt/qt-creator python
 mail-client/claws-mail webkit spamassassin
 media-gfx/gimp -webkit
 media-gfx/imagemagick -pdf

@@ -4,6 +4,7 @@ app-crypt/qca gpg
 dev-lang/fpc source
 dev-lang/mono minimal
 dev-lang/python sqlite
+dev-libs/botan threads
 dev-libs/elfutils static-libs
 dev-libs/keybinder python
 dev-libs/libdbusmenu gtk3
