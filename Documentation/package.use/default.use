@@ -7,6 +7,7 @@ app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
 dev-python/PyQt5 examples designer
 dev-qt/qt-creator python
+dev-util/geany-plugins python markdown
 mail-client/claws-mail webkit spamassassin
 media-gfx/gimp -webkit
 media-gfx/imagemagick -pdf
