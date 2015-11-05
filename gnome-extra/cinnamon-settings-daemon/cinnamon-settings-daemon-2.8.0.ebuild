@@ -17,19 +17,19 @@ IUSE="+colord cups input_devices_wacom smartcard systemd"
 
 # udev is non-optional since lots of plugins, not just gudev, pull it in
 RDEPEND="
-	>=dev-libs/glib-2.38:2
+	>=dev-libs/glib-2.44.1:2
 	>=gnome-base/libgnomekbd-3.6
-	>=gnome-base/librsvg-2.36.2
-	>=gnome-extra/cinnamon-desktop-2.6.3:0=
+	>=gnome-base/librsvg-2.40.10
+	>=gnome-extra/cinnamon-desktop-2.8.0:0=
 	media-libs/fontconfig
-	>=media-libs/lcms-2.2:2
+	>=media-libs/lcms-2.6:2
 	media-libs/libcanberra:0=[gtk3]
 	>=media-sound/pulseaudio-0.9.16:0=
 	sys-apps/dbus
-	>=sys-auth/polkit-0.97
+	>=sys-auth/polkit-0.113
 	|| ( >=sys-power/upower-0.9.11:= sys-power/upower-pm-utils )
 	x11-libs/gdk-pixbuf:2
-	>=x11-libs/gtk+-3.9.10:3
+	>=x11-libs/gtk+-3.16.6:3
 	>=x11-libs/libnotify-0.7.3:0=
 	x11-libs/libX11
 	x11-libs/libXext
@@ -38,19 +38,19 @@ RDEPEND="
 	x11-libs/libxklavier
 	virtual/libgudev:=
 
-	colord? ( >=x11-misc/colord-0.1.27:= )
-	cups? ( >=net-print/cups-1.4[dbus] )
+	colord? ( >=x11-misc/colord-1.2.12:= )
+	cups? ( >=net-print/cups-2.0.3[dbus] )
 	input_devices_wacom? (
-		>=dev-libs/libwacom-0.7
+		>=dev-libs/libwacom-0.11
 		x11-drivers/xf86-input-wacom
 		x11-libs/libXtst )
-	smartcard? ( >=dev-libs/nss-3.11.2 )
+	smartcard? ( >=dev-libs/nss-3.20 )
 	systemd? ( sys-apps/systemd:0= )
 	!systemd? ( sys-auth/consolekit:0= )
 "
 DEPEND="${RDEPEND}
 	dev-libs/libxml2:2
-	>=dev-util/intltool-0.37.1
+	>=dev-util/intltool-0.50.2
 	x11-proto/kbproto
 	virtual/pkgconfig
 "
