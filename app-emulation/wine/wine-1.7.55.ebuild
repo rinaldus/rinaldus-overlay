@@ -17,12 +17,12 @@ if [[ ${PV} == "9999" ]] ; then
 	#KEYWORDS=""
 else
 	MY_P="${PN}-${PV/_/-}"
-	SRC_URI="mirror://sourceforge/${PN}/Source/${MY_P}.tar.bz2"
+	SRC_URI="http://ftp.winehq.org/pub/${PN}/source/1.7/${PN}-${PV}.tar.bz2"
 	KEYWORDS="-* ~amd64 ~x86 ~x86-fbsd"
 	S=${WORKDIR}/${MY_P}
 fi
 
-GV="2.36"
+GV="2.40"
 MV="4.5.6"
 COMPHOLIO_P="wine-staging-${PV}"
 WINE_GENTOO="wine-gentoo-2013.06.24"
@@ -40,7 +40,7 @@ SRC_URI="${SRC_URI}
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-IUSE="+abi_x86_32 +abi_x86_64 +alsa capi cups custom-cflags dos elibc_glibc +fontconfig +gecko gphoto2 gsm gstreamer +jpeg lcms ldap +mono mp3 ncurses netapi nls odbc openal opencl +opengl osmesa oss +perl +experimental +png +prelink pulseaudio +realtime +run-exes samba scanner selinux +ssl test +threads +truetype +udisks v4l +X xcomposite xinerama +xml"
+IUSE="+abi_x86_32 +abi_x86_64 +alsa capi cups custom-cflags dos elibc_glibc +fontconfig +gecko gphoto2 gsm gstreamer +jpeg lcms ldap +libtxc_dxtn +mono mp3 ncurses netapi nls odbc openal opencl +opengl osmesa oss +perl +experimental +png +prelink pulseaudio +realtime +run-exes samba scanner selinux +ssl test +threads +truetype +udisks v4l +X xcomposite xinerama +xml"
 REQUIRED_USE="|| ( abi_x86_32 abi_x86_64 )
 	test? ( abi_x86_32 )
 	elibc_glibc? ( threads )
@@ -78,6 +78,7 @@ NATIVE_DEPEND="
 	jpeg? ( virtual/jpeg:0= )
 	ldap? ( net-nds/openldap:= )
 	lcms? ( media-libs/lcms:2= )
+	libtxc_dxtn? ( media-libs/libtxc_dxtn )
 	mp3? ( >=media-sound/mpg123-1.5.0 )
 	netapi? ( net-fs/samba[netapi(+)] )
 	nls? ( sys-devel/gettext )
