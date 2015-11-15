@@ -22,8 +22,8 @@ IUSE="aac flac mp3 pulseaudio speex twolame vorbis gtk3"
 COMMON_DEPEND="app-text/rarian:0
 	dev-libs/libxml2:2
 	>=dev-libs/glib-2.18.2:2
-	>=mate-base/mate-panel-1.8:0[gtk3?]
-	>=mate-base/mate-desktop-1.9:0[gtk3?]
+	>=mate-base/mate-panel-1.12:0[gtk3?]
+	>=mate-base/mate-desktop-1.12:0[gtk3?]
 	>=media-libs/gstreamer-0.10.23:0.10
 	>=media-libs/gst-plugins-base-0.10.23:0.10
 	>=media-libs/gst-plugins-good-0.10:0.10
@@ -63,7 +63,7 @@ RDEPEND="${COMMON_DEPEND}
 	)"
 
 DEPEND="${COMMON_DEPEND}
-        >=media-libs/libmatemixer-1.10.0
+        >=media-libs/libmatemixer-1.12.0
 	app-text/docbook-xml-dtd:4.1.2
 	app-text/yelp-tools:0
 	>=app-text/scrollkeeper-dtd-1:1.0

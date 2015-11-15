@@ -24,7 +24,7 @@ IUSE="gtk3 doc"
 RDEPEND="dev-libs/glib:2
 	dev-python/pygobject:3[${PYTHON_USEDEP}]
 	|| (
-		>=mate-base/caja-1.8:0[introspection]
+		>=mate-base/caja-1.12:0[introspection]
 		>=mate-base/mate-file-manager-1.6:0[introspection]
 	)
 	!gtk3? ( x11-libs/gtk+:2 )

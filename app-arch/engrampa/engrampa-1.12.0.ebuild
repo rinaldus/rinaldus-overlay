@@ -28,13 +28,13 @@ RDEPEND="!gtk3? ( >=x11-libs/gtk+-2.21.4:2 x11-libs/gdk-pixbuf:2 )
 	>=dev-libs/json-glib-0.14:0
 	x11-libs/pango:0
 	virtual/libintl:0
-	|| ( >=mate-base/caja-1.8:0[gtk3?] >=mate-base/mate-file-manager-1.6:0 )
+	|| ( >=mate-base/caja-1.12:0[gtk3?] >=mate-base/mate-file-manager-1.6:0 )
 	!!app-arch/mate-file-archiver"
 
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.50.2-r1
 	dev-util/itstool:0
-	>=mate-base/mate-common-1.6:0
+	>=mate-base/mate-common-1.12:0
 	sys-devel/gettext:*
 	virtual/pkgconfig:*"
 

@@ -37,7 +37,7 @@ RDEPEND="app-text/rarian:0
         >=x11-libs/libwnck-3.4:3
         )
         systemd? ( sys-apps/systemd )
-	>=x11-themes/mate-icon-theme-1.9:0
+	>=x11-themes/mate-icon-theme-1.12:0
 	virtual/libintl:0"
 
 DEPEND="${RDEPEND}

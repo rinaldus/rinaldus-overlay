@@ -32,7 +32,7 @@ RDEPEND=">=dev-libs/glib-2.15.2:2
 
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.50.2-r1
-	>=mate-base/mate-common-1.6:0
+	>=mate-base/mate-common-1.12:0
 	sys-devel/gettext:*
 	virtual/pkgconfig:*"
 

@@ -24,7 +24,7 @@ RDEPEND="dev-libs/atk:0
 	>=dev-libs/libxml2-2.4.7:2
 	gnome-base/dconf:0
 	>=gnome-base/gvfs-1.10.1:0[udisks]
-	>=mate-base/mate-desktop-1.9:0[gtk3?]
+	>=mate-base/mate-desktop-1.12:0[gtk3?]
 	>=media-libs/libexif-0.5.12:0
 	x11-libs/cairo:0
 	x11-libs/libICE:0
@@ -49,11 +49,11 @@ DEPEND="${RDEPEND}
 	>=dev-lang/perl-5:0=
 	dev-util/gdbus-codegen:0
 	>=dev-util/intltool-0.50.2-r1
-	>=mate-base/mate-common-1.6:0
+	>=mate-base/mate-common-1.12:0
 	sys-devel/gettext:*
 	virtual/pkgconfig:*"
 
-PDEPEND="mate? ( >=x11-themes/mate-icon-theme-1.6:0 )"
+PDEPEND="mate? ( >=x11-themes/mate-icon-theme-1.12.0:0 )"
 
 # TODO: Test fails because Caja is not merged yet:
 # GLib-GIO-ERROR **: Settings schema 'org.mate.caja.preferences' is not installed

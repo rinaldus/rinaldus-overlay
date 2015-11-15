@@ -21,11 +21,11 @@ KEYWORDS="amd64 x86"
 
 COMMON_DEPEND=">=dev-python/pygobject-2.15.1:2[${PYTHON_USEDEP}]
 	>=dev-python/pygtk-2.13:2[${PYTHON_USEDEP}]
-	>=mate-base/mate-menus-1.6:0[introspection,python]"
+	>=mate-base/mate-menus-1.12:0[introspection,python]"
 
 RDEPEND="${COMMON_DEPEND}
 	${PYTHON_DEPS}
-	>=mate-base/mate-panel-1.6:0[gtk3?]
+	>=mate-base/mate-panel-1.12:0[gtk3?]
 	!gtk3? ( x11-libs/gdk-pixbuf:2[introspection]
 	x11-libs/gtk+:2[introspection]
         )

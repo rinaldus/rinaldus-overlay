@@ -31,7 +31,7 @@ RDEPEND=">=dev-libs/glib-2.28:2
 DEPEND="${RDEPEND}
 	>=dev-util/gtk-doc-1.3:0
 	>=dev-util/intltool-0.35:*
-	>=mate-base/mate-common-1.9.90
+	>=mate-base/mate-common-1.12
 	sys-devel/gettext:*
 	virtual/pkgconfig:*
 	!<gnome-extra/polkit-gnome-0.102:0"

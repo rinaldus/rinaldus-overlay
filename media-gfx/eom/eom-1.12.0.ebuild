@@ -26,7 +26,7 @@ RDEPEND="
 	>=dev-libs/glib-2.25.9:2
 	>=dev-libs/libxml2-2:2
 	gnome-base/dconf:0
-	>=mate-base/mate-desktop-1.6:0[gtk3?]
+	>=mate-base/mate-desktop-1.12:0[gtk3?]
 	sys-libs/zlib:0
 	x11-libs/cairo:0
         >=x11-libs/gdk-pixbuf-2.4:2[jpeg?,tiff?]
@@ -34,7 +34,7 @@ RDEPEND="
 	gtk3? ( x11-libs/gtk+:3 )
         x11-libs/libX11:0
 	>=x11-misc/shared-mime-info-0.20:0
-	>=x11-themes/mate-icon-theme-1.6:0
+	>=x11-themes/mate-icon-theme-1.12:0
 	virtual/libintl:0
 	dbus? ( >=dev-libs/dbus-glib-0.71:0 )
 	exif? (

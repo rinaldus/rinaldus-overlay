@@ -21,8 +21,8 @@ IUSE="X debug libnotify policykit pulseaudio smartcard gtk3"
 
 RDEPEND=">=dev-libs/dbus-glib-0.74:0
 	>=dev-libs/glib-2.17.3:2
-	>=mate-base/libmatekbd-1.9:0[gtk3?]
-	>=mate-base/mate-desktop-1.9:0[gtk3?]
+	>=mate-base/libmatekbd-1.12:0[gtk3?]
+	>=mate-base/mate-desktop-1.12:0[gtk3?]
 	media-libs/fontconfig:1.0
 	>=gnome-base/dconf-0.13.4:0
 	x11-libs/cairo:0

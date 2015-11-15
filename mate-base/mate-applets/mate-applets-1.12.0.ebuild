@@ -25,13 +25,13 @@ RDEPEND="${PYTHON_DEPS}
 	dev-libs/atk:0
 	>=dev-libs/dbus-glib-0.74:0
 	>=dev-libs/glib-2.22:2
-	>=dev-libs/libmateweather-1.6.1:0[gtk3?]
+	>=dev-libs/libmateweather-1.12.0:0[gtk3?]
 	>=dev-libs/libxml2-2.5:2
 	dev-python/pygobject:3
 	>=gnome-base/libgtop-2.11.92:2=
-	>=mate-base/mate-desktop-1.6:0[gtk3?]
-	>=mate-base/mate-panel-1.8:0[gtk3?]
-	>=mate-base/mate-settings-daemon-1.6:0[gtk3?]
+	>=mate-base/mate-desktop-1.12:0[gtk3?]
+	>=mate-base/mate-panel-1.12:0[gtk3?]
+	>=mate-base/mate-settings-daemon-1.12:0[gtk3?]
 	>=sys-apps/dbus-1.1.2:0
 	sys-power/cpupower
         !gtk3? ( x11-libs/gdk-pixbuf:2
@@ -48,7 +48,7 @@ RDEPEND="${PYTHON_DEPS}
 	x11-libs/libX11:0
 	>=x11-libs/libxklavier-4:0
 	x11-libs/pango:0
-	>=x11-themes/mate-icon-theme-1.6:0
+	>=x11-themes/mate-icon-theme-1.12:0
 	virtual/libintl:0
 	networkmanager? ( >=net-misc/networkmanager-0.7:0 )
 	policykit? ( >=sys-auth/polkit-0.92:0 )"
@@ -59,7 +59,7 @@ DEPEND="${RDEPEND}
 	app-text/yelp-tools:0
 	>=dev-util/intltool-0.50.2-r1
 	dev-libs/libxslt:0
-	>=mate-base/mate-common-1.6:0
+	>=mate-base/mate-common-1.12:0
 	sys-devel/gettext:*
 	virtual/pkgconfig:*"
 

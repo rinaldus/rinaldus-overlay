@@ -22,7 +22,7 @@ IUSE="X bluetooth gtk3"
 RDEPEND=">=app-mobilephone/obex-data-server-0.4:0
 	>=dev-libs/dbus-glib-0.70:0
 	>=dev-libs/glib-2.15.2:2
-	|| ( >=mate-base/caja-1.8:0[gtk3?] >=mate-base/mate-file-manager-1.6:0 )
+	|| ( >=mate-base/caja-1.12:0[gtk3?] >=mate-base/mate-file-manager-1.6:0 )
 	>=sys-apps/dbus-1.1.1:0
 	!gtk3? ( >=x11-libs/gdk-pixbuf-2:2
 	>=x11-libs/gtk+-2.14:2

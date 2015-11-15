@@ -23,12 +23,12 @@ RDEPEND="
 	dev-libs/atk:0
 	>=dev-libs/dbus-glib-0.80:0
 	>=dev-libs/glib-2.26:2
-	>=dev-libs/libmateweather-1.6[gtk3?]
+	>=dev-libs/libmateweather-1.12[gtk3?]
 	dev-libs/libxml2:2
 	>=gnome-base/dconf-0.10:0
 	gnome-base/librsvg:2
-	>=mate-base/mate-desktop-1.9:0[gtk3?]
-	>=mate-base/mate-menus-1.6:0
+	>=mate-base/mate-desktop-1.12:0[gtk3?]
+	>=mate-base/mate-menus-1.12:0
 	>=sys-apps/dbus-1.1.2:0
 	>=x11-libs/cairo-1:0
 	x11-libs/libICE:0
@@ -54,7 +54,7 @@ DEPEND="${RDEPEND}
 	app-text/yelp-tools:0
 	>=dev-lang/perl-5:0=
 	>=dev-util/intltool-0.50.2-r1
-	>=mate-base/mate-common-1.6:0
+	>=mate-base/mate-common-1.12:0
 	sys-devel/gettext:*
 	virtual/pkgconfig:*"
 

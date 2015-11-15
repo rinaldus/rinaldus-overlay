@@ -25,9 +25,9 @@ RDEPEND="!gtk3? ( >=x11-libs/gtk+-2.18:2
         )
         gtk3? ( x11-libs/gtk+:3 )
 	>=dev-libs/glib-2.26:2
-	>=mate-base/caja-1.8:0[gtk3?]
+	>=mate-base/caja-1.12:0[gtk3?]
 	virtual/libintl:0
-	open-terminal? ( >=mate-base/mate-desktop-1.8:0[gtk3?] )
+	open-terminal? ( >=mate-base/mate-desktop-1.12:0[gtk3?] )
 	cdr? ( >=app-cdr/brasero-2.32.1:0= )
 	gajim? (
 		net-im/gajim:0
@@ -41,7 +41,7 @@ RDEPEND="!gtk3? ( >=x11-libs/gtk+-2.18:2
 
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.18:*
-	>=mate-base/mate-common-1.8:0
+	>=mate-base/mate-common-1.12:0
 	sys-devel/gettext:*
 	virtual/pkgconfig:*
 	!!mate-extra/mate-file-manager-open-terminal

@@ -39,7 +39,7 @@ RDEPEND=">=dev-libs/glib-2.13:2[${PYTHON_USEDEP}]
 
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.50.2-r1
-	>=mate-base/mate-common-1.9:0
+	>=mate-base/mate-common-1.12:0
 	sys-devel/gettext:*
 	virtual/pkgconfig:*"
 

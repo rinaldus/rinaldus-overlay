@@ -24,7 +24,7 @@ DEPEND="${RDEPEND}
  	gnome-extra/yelp
         >=dev-util/intltool-0.40:*
 	app-text/yelp-tools
-	>=mate-base/mate-common-1.10:0
+	>=mate-base/mate-common-1.12:0
 	sys-devel/gettext:*
 	virtual/pkgconfig:*"
 

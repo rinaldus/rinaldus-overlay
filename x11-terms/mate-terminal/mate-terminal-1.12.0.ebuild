@@ -21,7 +21,7 @@ RDEPEND="app-text/rarian:0
 	dev-libs/atk:0
 	>=dev-libs/glib-2.25:2
 	>=gnome-base/dconf-0.10:0
-	>=mate-base/mate-desktop-1.10:0[gtk3?]
+	>=mate-base/mate-desktop-1.12:0[gtk3?]
 	!gtk3? ( x11-libs/gdk-pixbuf:2
 	>=x11-libs/gtk+-2.18:2
 	>=x11-libs/vte-0.27.1:0

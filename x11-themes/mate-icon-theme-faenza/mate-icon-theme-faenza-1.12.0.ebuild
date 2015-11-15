@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="minimal"
 
-RDEPEND="!minimal? ( >=x11-themes/mate-icon-theme-1.6:0 )
+RDEPEND="!minimal? ( >=x11-themes/mate-icon-theme-1.12:0 )
 	x11-themes/hicolor-icon-theme:0"
 
 RESTRICT="binchecks strip"
