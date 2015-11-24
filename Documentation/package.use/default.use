@@ -1,5 +1,6 @@
 # Create folder /etc/portage/package.use and symlink this file there
 app-admin/conky curl lua
+app-arch/engrampa caja
 app-editors/vim python
 app-emulation/virtualbox extensions
 app-emulation/wine experimental
