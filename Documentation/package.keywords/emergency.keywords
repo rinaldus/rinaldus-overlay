@@ -1,0 +1,6 @@
+# Stable versions of packages for emergency use if unstable versions have any bugs
+dev-libs/libsigc++ -~amd64
+dev-cpp/glibmm -~amd64
+dev-cpp/pangomm -~amd64
+dev-cpp/cairomm -~amd64
+dev-cpp/atkmm -~amd64
