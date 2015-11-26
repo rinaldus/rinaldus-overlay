@@ -1,0 +1,7 @@
+# This is list of USE-flags for dependencies of neccessary applications
+# for app-emulation/wine
+dev-libs/elfutils static-libs
+# for net-misc/seafile-client
+dev-lang/python sqlite
+# for media-video/vlc
+sys-libs/zlib minizip

@@ -1,14 +1,10 @@
 # This file is useful if you use simple desktop profile and want to install Plasma 5
-app-arch/unzip natspec
-dev-qt/designer declarative
-dev-qt/qtmultimedia qml
-dev-qt/qtsql mysql
-dev-util/cmake -qt4
-kde-apps/gwenview kipi
-kde-apps/kio-extras phonon
-kde-frameworks/knotifyconfig phonon
-kde-plasma/breeze -qt4
-kde-plasma/plasma-desktop -qt4
-media-gfx/exiv2 xmp
-media-libs/mesa wayland
-media-libs/phonon -designer
+dev-libs/libdbusmenu gtk3
+dev-qt/qtcore icu
+kde-plasma/plasma-desktop legacy-systray gtk2 gtk3
+media-libs/phonon -vlc
+net-fs/samba client
+net-wireless/wpa_supplicant -qt4 -qt5
+sys-libs/ntdb python
+sys-libs/tdb python
+sys-libs/tevent python

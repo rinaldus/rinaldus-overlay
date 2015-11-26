@@ -1,29 +1,3 @@
-app-crypt/heimdal -ssl
-app-crypt/pinentry -qt4
-app-crypt/qca gpg
-dev-lang/fpc source
-dev-lang/mono minimal
-dev-lang/python sqlite
-dev-libs/botan threads
-dev-libs/elfutils static-libs
-dev-libs/keybinder python
-dev-libs/libdbusmenu gtk3
+dev-util/cmake -qt5
 dev-libs/libpcre pcre16
-dev-libs/libxml2 icu
-dev-libs/quazip -qt4
-dev-qt/qtcore icu
-dev-qt/qtquickcontrols widgets
-dev-qt/qtwebkit icu qml
-gnome-base/gnome-vfs -samba
-gnome-extra/zenity -webkit
-media-libs/harfbuzz icu
-media-libs/mesa vaapi vdpau
-media-video/ffmpeg -samba
-net-fs/samba client
-net-libs/libproxy -webkit
-net-wireless/wpa_supplicant -qt4 -qt5
-sys-libs/ntdb python
-sys-libs/tdb python
-sys-libs/tevent python
-sys-libs/zlib minizip
-x11-libs/vte python
+app-crypt/pinentry -qt4
