@@ -4,6 +4,9 @@ dev-libs/elfutils static-libs
 # for net-misc/seafile-client
 dev-lang/python sqlite
 # for media-video/vlc
+net-fs/samba client
 sys-libs/zlib minizip
 # for app-office/libreoffice
 media-libs/harfbuzz icu
+# for net-p2p/transgui
+dev-lang/fpc source
