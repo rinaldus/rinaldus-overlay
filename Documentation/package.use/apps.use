@@ -10,3 +10,5 @@ sys-libs/zlib minizip
 media-libs/harfbuzz icu
 # for net-p2p/transgui
 dev-lang/fpc source
+# for x11-terms/terminator
+x11-libs/vte python
