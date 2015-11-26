@@ -5,3 +5,5 @@ dev-libs/elfutils static-libs
 dev-lang/python sqlite
 # for media-video/vlc
 sys-libs/zlib minizip
+# for app-office/libreoffice
+media-libs/harfbuzz icu
