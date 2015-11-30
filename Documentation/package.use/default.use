@@ -26,3 +26,4 @@ www-client/w3m -X -gtk
 x11-drivers/nvidia-drivers multilib gtk2
 x11-misc/sddm -upower
 x11-terms/terminator -gnome
+x11-wm/openbox imlib
