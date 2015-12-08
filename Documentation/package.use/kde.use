@@ -2,6 +2,7 @@
 dev-libs/libdbusmenu gtk3
 dev-qt/qtcore icu
 kde-plasma/plasma-desktop legacy-systray gtk2 gtk3
+kde-plasma/plasma-meta -display-manager -sddm
 media-libs/phonon -vlc
 net-fs/samba client
 net-wireless/wpa_supplicant -qt4 -qt5
