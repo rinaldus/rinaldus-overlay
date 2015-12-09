@@ -7,7 +7,7 @@ app-emulation/wine experimental
 app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
 dev-lang/mono minimal
-dev-python/PyQt5 examples designer webkit
+dev-python/PyQt5 examples designer
 dev-qt/qt-creator python
 dev-util/geany-plugins python markdown
 mail-client/claws-mail webkit spamassassin
