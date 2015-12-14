@@ -1,6 +1,0 @@
-# This file is useful if you use simple desktop profile and want to install MATE
-app-crypt/pinentry gnome-keyring
-mate-base/mate-menus python
-media-video/ffmpeg -samba
-sys-libs/tdb python
-sys-libs/tevent python

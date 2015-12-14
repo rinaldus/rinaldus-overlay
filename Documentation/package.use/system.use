@@ -1,3 +1,40 @@
 dev-util/cmake -qt5
 dev-libs/libpcre pcre16
 app-crypt/pinentry -qt4
+
+# kde.use
+dev-libs/libdbusmenu gtk3
+dev-qt/qtcore icu
+kde-plasma/plasma-desktop legacy-systray gtk2 gtk3
+kde-plasma/plasma-meta -display-manager -sddm
+media-libs/mesa wayland
+media-libs/phonon -vlc
+net-fs/samba client
+net-wireless/wpa_supplicant -qt4 -qt5
+sys-libs/ntdb python
+sys-libs/tdb python
+sys-libs/tevent python
+
+# mate.use
+app-crypt/pinentry gnome-keyring
+mate-base/mate-menus python
+media-video/ffmpeg -samba
+
+# cinnamon.use
+media-libs/harfbuzz icu
+
+# apps.use
+
+# for app-emulation/wine
+dev-libs/elfutils static-libs
+# for net-misc/seafile-client
+dev-lang/python sqlite
+# for media-video/vlc
+net-fs/samba client
+sys-libs/zlib minizip
+# for net-p2p/transgui
+dev-lang/fpc source
+# for x11-terms/terminator
+x11-libs/vte python
+# for games-util/steam-meta-client
+dev-libs/libdbusmenu gtk3
