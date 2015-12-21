@@ -16,10 +16,9 @@ if [[ ${PV} == "9999" ]] ; then
 	SRC_URI=""
 	#KEYWORDS=""
 else
-	PV="1.8-rc1"
 	MY_P="${PN}-${PV/_/-}"
 	SRC_URI="http://ftp.winehq.org/pub/${PN}/source/1.8/${PN}-${PV}.tar.bz2"
-	KEYWORDS="-* ~amd64 ~x86 ~x86-fbsd"
+	KEYWORDS="-* amd64 x86 x86-fbsd"
 	S=${WORKDIR}/${MY_P}
 fi
 
