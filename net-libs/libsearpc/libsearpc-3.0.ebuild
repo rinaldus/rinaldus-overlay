@@ -14,7 +14,7 @@ SRC_URI="https://github.com/haiwen/${PN}/archive/v${PV}-latest.tar.gz -> ${PN}-$
 
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="~x86"
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 DEPEND=">=dev-lang/python-2.5
