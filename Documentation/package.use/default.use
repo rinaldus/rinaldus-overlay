@@ -4,6 +4,7 @@ app-arch/engrampa caja
 app-editors/vim python
 app-emulation/virtualbox extensions
 app-emulation/wine experimental
+app-office/libreoffice java
 app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
 dev-python/PyQt5 examples designer
