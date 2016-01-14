@@ -1,2 +1,2 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
-=app-admin/conky-1.10.0 # fails to build
+=net-fs/samba-4.2.7-r1 # fails to build
