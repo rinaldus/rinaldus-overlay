@@ -11,7 +11,7 @@ app-text/atril djvu epub
 dev-python/PyQt5 examples designer
 dev-qt/qt-creator python
 dev-util/geany-plugins python markdown
-mail-client/claws-mail webkit spamassassin
+mail-client/claws-mail webkit
 media-gfx/gimp -webkit
 media-gfx/imagemagick -pdf
 media-video/ffmpeg vaapi vdpau threads
