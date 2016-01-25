@@ -65,8 +65,6 @@ DOCS="AUTHORS ChangeLog HACKING NEWS README"
 src_install() {
 	gnome2_src_install
 
-	python_replicate_script "${ED}"/usr/bin/mate-conf-import
-
 	# Remove installed files that cause collissions.
 	rm -rf "${ED}"/usr/share/help/C/{lgpl,gpl,fdl}
 }
