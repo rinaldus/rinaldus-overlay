@@ -43,8 +43,17 @@ dev-libs/libdbusmenu gtk3
 dev-libs/keybinder python
 
 # for GNOME
+app-misc/tracker gstreamer
+app-misc/trackeri gstreamer
+dev-libs/folks eds
+dev-libs/libgdata gnome-online-accounts
 gnome-base/gnome-control-center networkmanager
 gnome-extra/evolution-data-server vala
-dev-libs/folks eds
+media-libs/clutter egl
+media-libs/cogl gles2
 media-libs/grilo playlist
+media-libs/gst-plugins-base theora
 media-libs/libmediaart -qt4 -qt5
+media-libs/mesa gles2
+media-plugins/grilo-plugins tracker upnp-av
+www-servers/apache apache2_modules_auth_digest apache2_mpms_prefork
