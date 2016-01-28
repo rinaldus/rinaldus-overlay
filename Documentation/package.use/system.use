@@ -41,3 +41,10 @@ x11-libs/vte python
 dev-libs/libdbusmenu gtk3
 
 dev-libs/keybinder python
+
+# for GNOME
+gnome-base/gnome-control-center networkmanager
+gnome-extra/evolution-data-server vala
+dev-libs/folks eds
+media-libs/grilo playlist
+media-libs/libmediaart -qt4 -qt5
