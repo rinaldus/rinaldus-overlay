@@ -57,3 +57,5 @@ media-libs/libmediaart -qt4 -qt5
 media-libs/mesa gles2
 media-plugins/grilo-plugins tracker upnp-av
 www-servers/apache apache2_modules_auth_digest apache2_mpms_prefork
+
+dev-qt/qtwebkit -exceptions
