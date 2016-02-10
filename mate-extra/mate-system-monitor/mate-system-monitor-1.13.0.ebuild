@@ -27,9 +27,6 @@ RDEPEND="app-text/rarian:0
 	>=gnome-base/librsvg-2.12:2
 	>=sys-apps/dbus-0.7:0
 	x11-libs/cairo:0
-	>=x11-libs/gtk+-2.20:2
-	>=x11-libs/libwnck-2.5:1
-	>=dev-cpp/gtkmm-2.22:2.4
     x11-libs/gtk+:3 
     dev-cpp/gtkmm:3.0
     >=x11-libs/libwnck-3.4:3
