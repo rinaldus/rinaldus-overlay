@@ -19,7 +19,7 @@ sys-libs/tevent python
 # mate.use
 app-crypt/pinentry gnome-keyring
 mate-base/mate-menus python
-media-video/ffmpeg -samba
+media-video/ffmpeg -samba v4l webp
 
 # cinnamon.use
 media-libs/harfbuzz icu
@@ -58,4 +58,18 @@ media-libs/mesa gles2
 media-plugins/grilo-plugins tracker upnp-av
 www-servers/apache apache2_modules_auth_digest apache2_mpms_prefork
 
-dev-qt/qtwebkit -exceptions
+dev-qt/qtwebkit -exceptions printsupport
+dev-lang/mono minimal
+dev-qt/qtmultimedia qml
+
+dev-ruby/did_you_mean ruby_targets_ruby23
+dev-ruby/json ruby_targets_ruby23
+dev-ruby/minitest ruby_targets_ruby23
+dev-ruby/net-telnet ruby_targets_ruby23
+dev-ruby/power_assert ruby_targets_ruby23
+dev-ruby/racc ruby_targets_ruby23
+dev-ruby/rake ruby_targets_ruby23
+dev-ruby/rdoc ruby_targets_ruby23
+dev-ruby/rubygems ruby_targets_ruby23
+dev-ruby/test-unit ruby_targets_ruby23
+virtual/rubygems ruby_targets_ruby23
