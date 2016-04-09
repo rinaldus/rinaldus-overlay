@@ -77,4 +77,4 @@ src_configure() {
                 ${myconf}
 }
 
-DOCS="AUTHORS ChangeLog HACKING NEWS README THANKS TODO"
+DOCS="AUTHORS ChangeLog HACKING NEWS README"
