@@ -13,7 +13,7 @@ SRC_URI="https://code.launchpad.net/${PN}/0.7-series/${PV}/+download/${P}.tar.gz
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="x86 amd64"
 IUSE="s3 azure"
 
 DEPEND="net-libs/librsync
