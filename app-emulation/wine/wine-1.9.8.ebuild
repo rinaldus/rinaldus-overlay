@@ -23,7 +23,7 @@ else
 fi
 
 GV="2.44"
-MV="4.6.0"
+MV="4.6.2"
 STAGING_P="wine-staging-${PV}"
 STAGING_DIR="${WORKDIR}/${STAGING_P}"
 WINE_GENTOO="wine-gentoo-2015.03.07"
