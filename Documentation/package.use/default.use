@@ -4,7 +4,6 @@ app-arch/engrampa caja
 app-editors/vim python
 app-emulation/virtualbox extensions
 app-emulation/wine staging s3tc
-app-office/libreoffice java
 app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
 app-text/atril djvu epub
