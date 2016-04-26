@@ -61,6 +61,8 @@ www-servers/apache apache2_modules_auth_digest apache2_mpms_prefork
 dev-qt/qtwebkit -exceptions printsupport
 dev-lang/mono minimal
 dev-qt/qtmultimedia qml
+dev-qt/qtwebengine widgets
+dev-qt/qtwebchannel qml
 
 dev-ruby/did_you_mean ruby_targets_ruby23
 dev-ruby/json ruby_targets_ruby23
