@@ -7,7 +7,7 @@ app-emulation/wine staging s3tc
 app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
 app-text/atril djvu epub
-dev-python/PyQt5 examples designer webkit
+dev-python/PyQt5 examples designer webkit webchannel websockets
 dev-qt/designer webkit
 dev-qt/qt-creator python
 dev-util/geany-plugins python markdown
