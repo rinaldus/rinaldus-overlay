@@ -75,3 +75,5 @@ dev-ruby/rdoc ruby_targets_ruby23
 dev-ruby/rubygems ruby_targets_ruby23
 dev-ruby/test-unit ruby_targets_ruby23
 virtual/rubygems ruby_targets_ruby23
+
+sys-devel/gcc multislot
