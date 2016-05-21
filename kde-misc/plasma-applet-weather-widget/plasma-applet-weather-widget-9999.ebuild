@@ -2,12 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 inherit kde5
 
 DESCRIPTION="Plasma 5 applet for weather forecasts"
-HOMEPAGE="http://kde-look.org/content/show.php/Weather+Widget?content=169572 https://github.com/kotelnik/plasma-applet-weather-widget"
+HOMEPAGE="http://kde-look.org/content/show.php/Weather+Widget?content=169572
+https://github.com/kotelnik/plasma-applet-weather-widget"
 
 if [[ ${KDE_BUILD_TYPE} = live ]] ; then
 	EGIT_REPO_URI="https://github.com/kotelnik/${PN}.git"
@@ -21,7 +22,7 @@ IUSE=""
 
 DEPEND="
 	$(add_frameworks_dep plasma)
-	dev-qt/qtdeclarative:5
+	$(add_qt_dep qtdeclarative)
 "
 RDEPEND="${DEPEND}"
 
