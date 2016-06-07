@@ -23,6 +23,7 @@ media-video/vlc upnp vdpau vaapi lua rtsp vlm httpd qt4 -qt5 ffmpeg postproc
 net-im/psi extras iconsets plugins webkit -qt5
 net-libs/ccnet client python
 net-misc/seafile client
+net-p2p/syncthing-gtk inotify
 sys-block/gparted fat
 sys-boot/grub -multislot
 virtual/ffmpeg vaapi threads vdpau
