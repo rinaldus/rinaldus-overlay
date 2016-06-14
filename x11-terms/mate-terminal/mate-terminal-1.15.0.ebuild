@@ -39,7 +39,7 @@ DEPEND="${RDEPEND}
 	sys-devel/gettext:*
 	virtual/pkgconfig:*"
 
-DOCS="AUTHORS ChangeLog HACKING NEWS README"
+DOCS="AUTHORS ChangeLog NEWS README"
 
 src_configure() {
 	local myconf
