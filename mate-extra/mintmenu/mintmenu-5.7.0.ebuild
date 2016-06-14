@@ -13,9 +13,9 @@ PYTHON_COMPAT=( python2_7 )
 inherit eutils gnome2-utils python-single-r1 l10n
 
 DESCRIPTION="MintMenu supports filtering, favorites, easy-uninstallation, autosession, and many other features."
-MINT_TRANSLATIONS="mint-translations_2015.02.23.tar.gz"
+MINT_TRANSLATIONS="mint-translations_2016.05.24.tar.xz"
 LANG_URL="http://packages.linuxmint.com/pool/main/m/mint-translations/${MINT_TRANSLATIONS}"
-SRC_URI="http://packages.linuxmint.com/pool/main/m/mintmenu/${PN}_${PV}.tar.gz ${LANG_URL}"
+SRC_URI="http://packages.linuxmint.com/pool/main/m/mintmenu/${PN}_${PV}.tar.xz ${LANG_URL}"
 HOMEPAGE="http://linuxmint.com"
 LICENSE="GPL-2"
 KEYWORDS="amd64 x86"
