@@ -104,4 +104,4 @@ src_configure() {
                 $(use_enable epub)
 }
 
-DOCS="AUTHORS NEWS README TODO"
+DOCS="AUTHORS NEWS README"
