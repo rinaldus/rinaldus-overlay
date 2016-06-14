@@ -58,7 +58,7 @@ src_configure() {
 		$(use_enable caja caja-actions)
 }
 
-DOCS="AUTHORS HACKING MAINTAINERS NEWS README TODO"
+DOCS="AUTHORS HACKING NEWS README"
 
 pkg_postinst() {
 	gnome2_pkg_postinst
