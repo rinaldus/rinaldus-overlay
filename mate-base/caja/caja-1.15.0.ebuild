@@ -82,7 +82,7 @@ src_configure() {
                 $(use_with X x)
 }
 
-DOCS="AUTHORS ChangeLog* HACKING MAINTAINERS NEWS README THANKS TODO"
+DOCS="AUTHORS ChangeLog* HACKING NEWS README"
 
 src_test() {
 	unset SESSION_MANAGER
