@@ -44,7 +44,7 @@ RDEPEND="
 		gtk3? ( sci-calculators/galculator )
                 >=mate-extra/mate-power-manager-1.14:0[gtk3?]
 		>=mate-extra/mate-screensaver-1.14:0
-		>=mate-extra/mate-system-monitor-1.14:0[gtk3?]
+		>=mate-extra/mate-system-monitor-1.14:0
 		>=mate-extra/mate-utils-1.14:0
 		>=media-gfx/eom-1.14:0[gtk3?]
 	)
