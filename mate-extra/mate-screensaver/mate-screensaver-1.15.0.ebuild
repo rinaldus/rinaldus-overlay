@@ -26,9 +26,9 @@ RDEPEND="
 	>=dev-libs/dbus-glib-0.71:0
 	>=dev-libs/glib-2.26:2
 	gnome-base/dconf:0
-	>=mate-base/libmatekbd-1.12:0[gtk3?]
-	>=mate-base/mate-desktop-1.12:0[gtk3?]
-	>=mate-base/mate-menus-1.12:0
+	>=mate-base/libmatekbd-1.15:0[gtk3?]
+	>=mate-base/mate-desktop-1.15:0[gtk3?]
+	>=mate-base/mate-menus-1.15:0
 	>=sys-apps/dbus-0.30:0
 	!gtk3? ( >=x11-libs/gdk-pixbuf-2.14:2
 	>=x11-libs/gtk+-2.14:2
@@ -53,7 +53,7 @@ RDEPEND="
 # FIXME: Why is systemd and consolekit only a DEPEND? ConsoleKit can't be used build-time only.
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.35:*
-	>=mate-base/mate-common-1.12
+	>=mate-base/mate-common-1.15
 	sys-devel/gettext:*
 	x11-proto/randrproto:0
 	x11-proto/scrnsaverproto:0
