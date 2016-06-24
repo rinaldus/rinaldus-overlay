@@ -15,7 +15,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-IUSE="X consolekit kernel_linux libnotify opengl pam systemd gtk3"
+IUSE="X consolekit kernel_linux libnotify opengl pam systemd"
 
 DOC_CONTENTS="
 	Information for converting screensavers is located in
@@ -26,14 +26,11 @@ RDEPEND="
 	>=dev-libs/dbus-glib-0.71:0
 	>=dev-libs/glib-2.26:2
 	gnome-base/dconf:0
-	>=mate-base/libmatekbd-1.15:0[gtk3?]
-	>=mate-base/mate-desktop-1.15:0[gtk3?]
+	>=mate-base/libmatekbd-1.15:0[gtk3]
+	>=mate-base/mate-desktop-1.15:0[gtk3]
 	>=mate-base/mate-menus-1.15:0
 	>=sys-apps/dbus-0.30:0
-	!gtk3? ( >=x11-libs/gdk-pixbuf-2.14:2
-	>=x11-libs/gtk+-2.14:2
-        )
-        gtk3? ( x11-libs/gtk+:3 )
+    x11-libs/gtk+:3
 	>=x11-libs/libX11-1:0
 	x11-libs/cairo:0
 	x11-libs/libXext:0
@@ -65,8 +62,7 @@ DEPEND="${RDEPEND}
 
 src_configure() {
         local myconf
-        use gtk3 && myconf="${myconf} --with-gtk=3.0"
-        use !gtk3 && myconf="${myconf} --with-gtk=2.0"
+        myconf="${myconf} --with-gtk=3.0"
 	gnome2_src_configure \
 		$(use_with consolekit console-kit) \
 		$(use_enable debug) \
