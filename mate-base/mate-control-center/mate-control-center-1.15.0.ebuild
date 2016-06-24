@@ -34,14 +34,14 @@ RDEPEND="app-text/rarian:0
 	dev-libs/libxml2:2
 	>=gnome-base/dconf-0.13.4:0
 	>=gnome-base/librsvg-2.0:2
-	>=mate-base/libmatekbd-1.12:0[gtk3?]
-	>=mate-base/mate-desktop-1.12:0[gtk3?]
+	>=mate-base/libmatekbd-1.15:0[gtk3?]
+	>=mate-base/mate-desktop-1.15:0[gtk3?]
 	|| (
-		>=mate-base/caja-1.12:0[gtk3?]
-		>=mate-base/mate-file-manager-1.12:0
+		>=mate-base/caja-1.15:0[gtk3?]
+		>=mate-base/mate-file-manager-1.6:0
 	)
-	>=mate-base/mate-menus-1.12:0
-	>=mate-base/mate-settings-daemon-1.12:0[gtk3?]
+	>=mate-base/mate-menus-1.15:0
+	>=mate-base/mate-settings-daemon-1.15:0[gtk3?]
 	>=media-libs/fontconfig-1:1.0
 	media-libs/freetype:2
 	>=sys-apps/dbus-1:0
@@ -59,7 +59,7 @@ RDEPEND="app-text/rarian:0
 	>=x11-libs/libxklavier-4:0
 	x11-libs/pango:0
 	|| (
-		>=x11-wm/marco-1.12.0:0
+		>=x11-wm/marco-1.15.0:0
 		>=x11-wm/mate-window-manager-1.6:0
 	)
 	virtual/libintl:0"
@@ -69,7 +69,7 @@ DEPEND="${RDEPEND}
 	app-text/yelp-tools:0
 	dev-util/desktop-file-utils:0
 	>=dev-util/intltool-0.37.1:*
-	>=mate-base/mate-common-1.12:0
+	>=mate-base/mate-common-1.15:0
 	sys-devel/gettext:*
 	x11-proto/kbproto:0
 	x11-proto/randrproto:0
