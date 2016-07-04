@@ -60,7 +60,7 @@ src_configure() {
                 ${myconf}
 }
 
-DOCS="AUTHORS ChangeLog HACKING NEWS README"
+DOCS="AUTHORS ChangeLog NEWS README"
 
 src_install() {
 	gnome2_src_install
