@@ -8,22 +8,20 @@ GCONF_DEBUG="no"
 
 inherit gnome2 versionator
 
-MATE_GTK_V="$(get_version_component_range 1-2)"
-MATE_GTK_NV="3.$(( $(get_version_component_range 2-2) + 1 ))" #variable to allow negation of =$P-1*
+MATE_BRANCH="$(get_version_component_range 1-2)"
 
-SRC_URI="http://pub.mate-desktop.org/releases/themes/${MATE_GTK_V}/${P}.tar.xz"
+SRC_URI="http://pub.mate-desktop.org/releases/themes/${MATE_BRANCH}/${P}.tar.xz"
 DESCRIPTION="A set of MATE themes, with sets for users with limited or low vision"
 HOMEPAGE="http://mate-desktop.org"
 
 LICENSE="LGPL-2.1"
-SLOT="0/${MATE_GTK_V}"
+SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
 
 RDEPEND="
 	>=x11-libs/gdk-pixbuf-2:2
 	>=x11-libs/gtk+-2:2
-	!<x11-libs/gtk+-${MATE_GTK_V}:3
-	!>=x11-libs/gtk+-${MATE_GTK_NV}:3
+	>=x11-libs/gtk+-3.20:3
 	>=x11-themes/gtk-engines-2.15.3:2
 	x11-themes/gtk-engines-murrine"
 
