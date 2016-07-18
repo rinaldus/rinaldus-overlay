@@ -38,6 +38,8 @@ dev-lang/fpc source
 x11-libs/vte python
 # for games-util/steam-meta-client
 dev-libs/libdbusmenu gtk3
+# for media-gfx/gimp
+media-libs/libmypaint gegl
 
 dev-libs/keybinder python
 
