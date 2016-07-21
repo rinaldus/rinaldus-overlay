@@ -19,7 +19,6 @@ KEYWORDS="~amd64 ~x86 ~arm"
 IUSE="tools"
 
 DOCS="README.md AUTHORS CONTRIBUTING.md"
-PATCHES=( "${FILESDIR}/relaysrv.systemd.patch" )
 
 pkg_setup() {
 	enewgroup ${PN}
