@@ -24,7 +24,7 @@ RDEPEND="
 	>=mate-base/mate-settings-daemon-1.15.0:0[gtk3?]
 	>=x11-wm/marco-1.15.0:0[gtk3?]
 	base? (
-		>=mate-base/caja-1.15.1:0[gtk3?]
+		>=mate-base/caja-1.15.2:0[gtk3?]
 		>=mate-base/mate-applets-1.15.0:0[gtk3?]
 		>=mate-base/mate-control-center-1.15.1:0[gtk3?]
 		>=mate-extra/mate-media-1.15.0:0
@@ -40,7 +40,7 @@ RDEPEND="
 	extras? (
 		>=app-arch/engrampa-1.15.0:0
 		>=app-editors/pluma-1.15.0:0[gtk3?]
-		>=app-text/atril-1.15.1:0[gtk3?]
+		>=app-text/atril-1.15.2:0[gtk3?]
 		!gtk3? ( >=mate-extra/mate-calc-1.8:0 )
 		gtk3? ( sci-calculators/galculator )
                 >=mate-extra/mate-power-manager-1.15.0:0[gtk3?]
