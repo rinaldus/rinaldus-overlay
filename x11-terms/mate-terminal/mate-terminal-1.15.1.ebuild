@@ -22,7 +22,7 @@ RDEPEND="app-text/rarian:0
 	>=gnome-base/dconf-0.10:0
 	>=mate-base/mate-desktop-1.15:0[gtk3]
     x11-libs/gtk+:3
-	x11-libs/vte:2.90
+	x11-libs/vte:2.91
 	x11-libs/libICE:0
 	x11-libs/libSM:0
 	x11-libs/libX11:0
