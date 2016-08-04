@@ -41,6 +41,9 @@ dev-libs/libdbusmenu gtk3
 # for media-gfx/gimp
 media-libs/libmypaint gegl
 
+# for mail-client/claws-mail
+dev-libs/boehm-gc threads
+
 dev-libs/keybinder python
 
 # for GNOME
