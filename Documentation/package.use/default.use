@@ -25,7 +25,6 @@ net-libs/ccnet client python
 net-misc/seafile client
 net-p2p/syncthing-gtk inotify
 sys-block/gparted fat
-sys-boot/grub -multislot
 virtual/ffmpeg vaapi threads vdpau
 www-client/chromium proprietary-codecs
 www-client/links -X
