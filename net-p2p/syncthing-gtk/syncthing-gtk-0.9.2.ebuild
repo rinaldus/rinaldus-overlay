@@ -3,7 +3,7 @@ inherit eutils
 
 DESCRIPTION="GTK3 & python based GUI for Syncthing"
 HOMEPAGE="https://github.com/syncthing/syncthing-gtk"
-SRC_URI="https://github.com/syncthing/syncthing-gtk/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/syncthing/syncthing-gtk/archive/v${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
 LICENSE="GPL 2"
 SLOT="0"
 KEYWORDS="amd64 x86"
