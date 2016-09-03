@@ -87,7 +87,7 @@ src_configure() {
                 ${myconf}
 }
 
-DOCS="AUTHORS HACKING NEWS README TODO"
+DOCS="AUTHORS HACKING NEWS README"
 
 src_test() {
 	unset DBUS_SESSION_BUS_ADDRESS
