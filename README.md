@@ -1,3 +1,5 @@
+*23.09.16 If you have problems with updating my overlay, simply remove and add it again.
+
 *This is my personal overlay. I often do experiments in it. You may use it without any warranties, on your own risk!*
 
 # Install
