@@ -1,5 +1,7 @@
 *23.09.16 If you have problems with updating my overlay, simply remove and add it again.*
+
 layman -d rinaldus-overlay
+
 layman -a rinaldus-overlay
 
 *This is my personal overlay. I often do experiments in it. You may use it without any warranties, on your own risk!*
