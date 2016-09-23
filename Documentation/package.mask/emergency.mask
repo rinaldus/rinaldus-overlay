@@ -1,2 +1,1 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
-=dev-libs/openssl-1.0.2g # See bug 575548 for more information
