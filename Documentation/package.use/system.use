@@ -68,6 +68,8 @@ dev-lang/mono minimal
 dev-qt/qtmultimedia qml
 dev-qt/qtwebengine widgets
 dev-qt/qtwebchannel qml
+# for dev-qt/qtwebengine
+media-libs/libvpx svc
 
 dev-ruby/did_you_mean ruby_targets_ruby23
 dev-ruby/json ruby_targets_ruby23
