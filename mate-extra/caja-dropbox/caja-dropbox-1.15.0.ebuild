@@ -23,7 +23,7 @@ RDEPEND="
 	dev-libs/atk:0
 	>=dev-libs/glib-2.14:2
 	dev-python/pygtk:2[${PYTHON_USEDEP}]
-	|| ( >=mate-base/caja-1.14:0 >=mate-base/mate-file-manager-1.6:0 )
+	|| ( >=mate-base/caja-1.15:0 >=mate-base/mate-file-manager-1.6:0 )
 	media-libs/fontconfig:1.0
 	media-libs/freetype:2
 	net-misc/dropbox:0
@@ -37,7 +37,7 @@ DEPEND="${RDEPEND}
 	dev-python/docutils:0
 	virtual/pkgconfig:*"
 
-G2CONF="${G2CONF} $(use_enable debug) --disable-static"
+G2CONF="${G2CONF} --disable-static"
 
 CONFIG_CHECK="~INOTIFY_USER"
 
