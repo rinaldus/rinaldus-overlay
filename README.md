@@ -2,7 +2,7 @@
 
 # Install
 
-## Automatic
-
-My overlay is now part of layman's database. Simply type following command to add it:
+My overlay is a part of layman's database. Simply type following command to add it:
+```
 layman -a rinaldus-overlay
+```
