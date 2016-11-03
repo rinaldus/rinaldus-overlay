@@ -9,6 +9,7 @@ kde-plasma/plasma-desktop legacy-systray gtk2 gtk3
 media-gfx/exiv2 xmp
 media-libs/mesa wayland
 media-libs/phonon -vlc
+media-sound/pulseaudio gnome
 net-fs/samba client
 net-wireless/wpa_supplicant -qt4 -qt5
 sys-libs/ntdb python
