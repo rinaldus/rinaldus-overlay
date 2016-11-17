@@ -5,6 +5,8 @@ app-crypt/pinentry -qt4
 # kde.use
 dev-libs/libdbusmenu gtk3
 dev-qt/qtcore icu
+dev-qt/qtwayland egl
+dev-qt/qtgui egl
 kde-plasma/plasma-desktop legacy-systray gtk2 gtk3
 media-gfx/exiv2 xmp
 media-libs/mesa wayland
