@@ -8,3 +8,4 @@ mate-extra/mate-media gtk3
 mate-extra/mate-netbook gtk3
 mate-extra/mate-screensaver gtk3
 mate-extra/mate-utils gtk3
+media-gfx/eom gtk3
