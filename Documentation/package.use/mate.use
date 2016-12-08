@@ -3,6 +3,7 @@
 app-text/atril gtk3
 mate-base/mate gtk3
 mate-base/mate-applets-meta gtk3
+mate-base/mate-desktop gtk3
 mate-extra/caja-extensions gtk3
 mate-extra/mate-media gtk3
 mate-extra/mate-netbook gtk3
