@@ -18,12 +18,16 @@ if [[ ${PV} == "9999" ]] ; then
 	#KEYWORDS=""
 else
 	MAJOR_V=$(get_version_component_range 1-2)
-	SRC_URI="https://dl.winehq.org/wine/source/${MAJOR_V}/${P}.tar.bz2"
+	PV="2.0-rc1"
+	MY_P="${PN}-${PV/_/-}"
+	SRC_URI="https://dl.winehq.org/wine/source/${MAJOR_V}/${PN}-${PV}.tar.bz2"
 	KEYWORDS="-* ~amd64 ~x86 ~x86-fbsd"
+	S=${WORKDIR}/${MY_P}
 fi
 
 GV="2.47"
-MV="4.6.3"
+MV="4.6.4"
+VERSION="2.0-rc1"
 STAGING_P="wine-staging-${PV}"
 STAGING_DIR="${WORKDIR}/${STAGING_P}"
 WINE_GENTOO="wine-gentoo-2015.03.07"
@@ -207,7 +211,7 @@ src_unpack() {
 			EGIT_CHECKOUT_DIR=${STAGING_DIR} git-r3_src_unpack
 		fi
 	else
-		unpack ${P}.tar.bz2
+		unpack ${PN}-${VERSION}.tar.bz2
 		use staging && unpack "${STAGING_P}.tar.gz"
 	fi
 
