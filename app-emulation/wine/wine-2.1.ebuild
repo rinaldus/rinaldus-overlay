@@ -207,7 +207,7 @@ src_unpack() {
 			EGIT_CHECKOUT_DIR=${STAGING_DIR} git-r3_src_unpack
 		fi
 	else
-		unpack ${P}.tar.bz2
+		unpack ${P}.tar.xz
 		use staging && unpack "${STAGING_P}.tar.gz"
 	fi
 
