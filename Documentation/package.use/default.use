@@ -12,6 +12,8 @@ dev-qt/designer webkit
 dev-qt/qt-creator python
 dev-util/geany-plugins python markdown
 mail-client/claws-mail webkit
+mail-client/evolution spamassassin -bogofilter
+mail-filter/spamassassin cron
 media-gfx/gimp -webkit
 media-gfx/imagemagick -pdf
 media-sound/deadbeef ape -cdda gtk3 lastfm cover curl m3u notify wavpack wma
