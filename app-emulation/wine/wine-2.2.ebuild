@@ -17,8 +17,8 @@ if [[ ${PV} == "9999" ]] ; then
 	SRC_URI=""
 	#KEYWORDS=""
 else
-	MAJOR_V=$(get_version_component_range 1-2)
-	SRC_URI="https://dl.winehq.org/wine/source/${MAJOR_V}/${P}.tar.bz2"
+	MAJOR_V=$(get_major_version).x
+	SRC_URI="https://dl.winehq.org/wine/source/${MAJOR_V}/${P}.tar.xz"
 	KEYWORDS="-* ~amd64 ~x86 ~x86-fbsd"
 fi
 
@@ -207,7 +207,7 @@ src_unpack() {
 			EGIT_CHECKOUT_DIR=${STAGING_DIR} git-r3_src_unpack
 		fi
 	else
-		unpack ${P}.tar.bz2
+		unpack ${P}.tar.xz
 		use staging && unpack "${STAGING_P}.tar.gz"
 	fi
 
