@@ -9,6 +9,8 @@ inherit fdo-mime gnome2-utils git-2 eutils
 EGIT_REPO_URI="https://github.com/Alexey-Yakovenko/deadbeef.git"
 EGIT_BRANCH="master"
 
+KEYWORDS=""
+
 DESCRIPTION="foobar2k-like music player"
 HOMEPAGE="http://deadbeef.sourceforge.net/"
 
