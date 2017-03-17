@@ -51,6 +51,7 @@ dev-libs/boehm-gc threads
 dev-libs/keybinder python
 
 # for GNOME
+app-editors/gedit -python
 app-misc/tracker gstreamer
 app-misc/trackeri gstreamer
 dev-libs/folks eds
