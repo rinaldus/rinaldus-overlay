@@ -31,6 +31,7 @@ media-libs/harfbuzz icu
 
 # for app-emulation/wine
 dev-libs/elfutils static-libs
+net-fs/samba winbind
 # for net-misc/seafile-client
 dev-lang/python sqlite
 # for media-video/vlc
