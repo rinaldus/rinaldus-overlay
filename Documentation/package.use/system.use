@@ -90,3 +90,5 @@ dev-ruby/test-unit ruby_targets_ruby23
 virtual/rubygems ruby_targets_ruby23
 
 sys-devel/gcc multislot
+# for AMD video
+media-libs/mesa d3d9
