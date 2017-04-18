@@ -94,3 +94,4 @@ sys-devel/gcc multislot
 media-libs/mesa d3d9
 
 dev-libs/libpeas python_single_target_python3_4
+media-tv/totem python_single_target_python3_4
