@@ -1,12 +1,11 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=5
 
 DESCRIPTION="Clearlooks-Phenix is a GTK+ 3 port of Clearlooks, the default theme for GNOME 2"
 HOMEPAGE="http://www.jpfleury.net/en/software/clearlooks-phenix.php"
-SRC_URI="https://github.com/rinaldus/clearlooks-phenix/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/jpfleury/clearlooks-phenix/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 KEYWORDS="~amd64 ~x86"
 LICENSE="GPL-3"
