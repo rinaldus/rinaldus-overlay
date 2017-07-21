@@ -14,6 +14,7 @@ DEPEND=""
 RDEPEND="
 		${DEPEND}
 		dev-lang/python:2.7
+		dev-python/bcrypt
 		dev-python/pygobject[cairo]
 		dev-python/setuptools
 		dev-python/python-dateutil
