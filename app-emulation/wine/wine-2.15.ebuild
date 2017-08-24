@@ -21,9 +21,9 @@ else
 fi
 
 VANILLA_GV="2.47"
-VANILLA_MV="4.7.0"
+VANILLA_MV="4.7.1"
 STAGING_GV="2.47"
-STAGING_MV="4.7.0"
+STAGING_MV="4.7.1"
 [[ ${MAJOR_V} == "1.8" ]] && SUFFIX="-unofficial"
 STAGING_P="wine-staging-${PV}"
 STAGING_DIR="${WORKDIR}/${STAGING_P}${SUFFIX}"
@@ -152,7 +152,7 @@ RDEPEND="${COMMON_DEPEND}
 	pulseaudio? (
 		realtime? ( sys-auth/rtkit )
 	)
-	s3tc? ( >=media-libs/libtxc_dxtn-1.0.1-r1[${MULTILIB_USEDEP}] )
+	s3tc? ( media-libs/libtxc_dxtn[${MULTILIB_USEDEP}] )
 	samba? ( >=net-fs/samba-3.0.25[winbind] )
 	selinux? ( sec-policy/selinux-wine )
 	udisks? ( sys-fs/udisks:2 )"
