@@ -1,2 +1,2 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
-=media-libs/freetype-2.8.1 # https://bugs.gentoo.org/631376
+# =media-libs/freetype-2.8.1 # https://bugs.gentoo.org/631376
