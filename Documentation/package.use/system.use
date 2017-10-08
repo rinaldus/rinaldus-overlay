@@ -1,12 +1,13 @@
 dev-util/cmake -qt5
 dev-libs/libpcre pcre16
+dev-libs/libpcre2 pcre16
 app-crypt/pinentry -qt4
 
 # kde.use
 dev-libs/libdbusmenu gtk3
 dev-qt/qtcore icu
 dev-qt/qtwayland egl
-dev-qt/qtgui egl
+dev-qt/qtgui egl libinput
 dev-qt/qtopengl egl
 kde-plasma/plasma-desktop legacy-systray gtk2 gtk3
 media-gfx/exiv2 xmp
