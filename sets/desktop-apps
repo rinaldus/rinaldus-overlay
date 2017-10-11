@@ -1,7 +1,6 @@
+app-arch/engrampa
 app-text/atril
-kde-apps/ark:5
+gnome-extra/nemo
 kde-apps/kcalc:5
-kde-apps/kwrite:5
 media-gfx/eom
-x11-misc/pcmanfm-qt
 x11-misc/screengrab
