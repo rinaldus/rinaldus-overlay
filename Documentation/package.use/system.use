@@ -15,6 +15,7 @@ media-libs/mesa wayland
 media-libs/phonon -vlc
 media-sound/pulseaudio gnome
 net-fs/samba client
+net-wireless/bluez user-session
 net-wireless/wpa_supplicant -qt4 -qt5
 sys-apps/dbus -user-session
 sys-libs/ntdb python
