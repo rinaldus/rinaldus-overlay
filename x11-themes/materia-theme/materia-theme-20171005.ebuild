@@ -31,6 +31,7 @@ DEPEND="
 	x11-libs/gdk-pixbuf
 	x11-themes/gtk-engines-murrine
 	dev-libs/glib
+	dev-libs/libxml2
 "
 RDEPEND="${DEPEND}"
 
