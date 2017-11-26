@@ -29,6 +29,7 @@ media-video/ffmpeg -samba v4l webp
 
 # cinnamon.use
 media-libs/harfbuzz icu
+x11-libs/xapps introspection
 
 # apps.use
 
