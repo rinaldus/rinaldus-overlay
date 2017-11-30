@@ -15,7 +15,7 @@ media-libs/grilo playlist
 media-libs/harfbuzz icu
 media-libs/libmediaart -qt5
 media-libs/libvpx svc
-media-libs/mesa wayland
+media-libs/mesa wayland gles2
 media-sound/pulseaudio gnome
 net-wireless/bluez user-session
 sys-apps/dbus user-session
