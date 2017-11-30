@@ -1,107 +1,21 @@
-dev-util/cmake -qt5
-dev-libs/libpcre pcre16
-dev-libs/libpcre2 pcre16
-app-crypt/pinentry -qt4
-
-# kde.use
-dev-libs/libdbusmenu gtk3
-dev-qt/qtcore icu
-dev-qt/qtwayland egl
-dev-qt/qtgui egl libinput
-dev-qt/qtopengl egl
-kde-plasma/plasma-desktop legacy-systray gtk2 gtk3
-media-gfx/exiv2 xmp
-media-libs/mesa wayland
-media-libs/phonon -vlc
-media-sound/pulseaudio gnome
-net-fs/samba client
-net-wireless/bluez user-session
-net-wireless/wpa_supplicant -qt4 -qt5
-sys-apps/dbus user-session
-sys-libs/ntdb python
-sys-libs/tdb python
-sys-libs/tevent python
-
-# mate.use
 app-crypt/pinentry gnome-keyring
-mate-base/mate-menus python
-media-video/ffmpeg -samba v4l webp
-
-# cinnamon.use
-media-libs/harfbuzz icu
-x11-libs/xapps introspection
-
-# apps.use
-
-# for app-emulation/wine
-dev-libs/elfutils static-libs
-net-fs/samba winbind
-# for net-misc/seafile-client
 dev-lang/python sqlite
-# for media-video/vlc
-net-fs/samba client
-sys-libs/zlib minizip
-# for net-p2p/transgui
-dev-lang/fpc source
-# for x11-terms/terminator
-x11-libs/vte python
-# for games-util/steam-meta-client
-dev-libs/libdbusmenu gtk3
-# for media-gfx/gimp
-media-libs/libmypaint gegl
-
-# for mail-client/claws-mail
-dev-libs/boehm-gc threads
-
-dev-libs/keybinder python
-
-# for GNOME
-app-editors/gedit -python
-app-misc/tracker gstreamer
-app-misc/trackeri gstreamer
-dev-libs/folks eds
-dev-libs/libgdata gnome-online-accounts
+dev-libs/libxml2 icu
+dev-qt/qtcore icu
+dev-qt/qtgui:5 egl
+dev-qt/qtwebchannel qml
+dev-qt/qtwebengine widgets
 gnome-base/gnome-control-center networkmanager
 gnome-extra/evolution-data-server vala
-media-libs/clutter egl
-media-libs/cogl gles2
+mate-base/mate-menus python
+media-libs/gegl jpeg2k raw
 media-libs/grilo playlist
-media-libs/gst-plugins-base theora
-media-libs/libmediaart -qt4 -qt5
-media-libs/mesa gles2
-media-plugins/grilo-plugins tracker upnp-av
-www-servers/apache apache2_modules_auth_digest apache2_mpms_prefork
-media-libs/gegl raw jpeg2k
-
-dev-qt/qtwebkit -exceptions printsupport
-dev-lang/mono minimal
-dev-qt/qtmultimedia qml
-dev-qt/qtwebengine widgets
-dev-qt/qtwebchannel qml
-# for dev-qt/qtwebengine
+media-libs/harfbuzz icu
+media-libs/libmediaart -qt5
 media-libs/libvpx svc
-
-dev-ruby/did_you_mean ruby_targets_ruby23
-dev-ruby/json ruby_targets_ruby23
-dev-ruby/minitest ruby_targets_ruby23
-dev-ruby/net-telnet ruby_targets_ruby23
-dev-ruby/power_assert ruby_targets_ruby23
-dev-ruby/racc ruby_targets_ruby23
-dev-ruby/rake ruby_targets_ruby23
-dev-ruby/rdoc ruby_targets_ruby23
-dev-ruby/rubygems ruby_targets_ruby23
-dev-ruby/test-unit ruby_targets_ruby23
-virtual/rubygems ruby_targets_ruby23
-
-sys-devel/gcc multislot
-# for AMD video
-media-libs/mesa d3d9
-
-dev-libs/libpeas python_single_target_python3_5
-media-tv/totem python_single_target_python3_4
-
-# for app-office/libreoffice
-dev-libs/xmlsec nss
-
-# for www-client/chromium
-dev-libs/libxml2 icu
+media-libs/mesa wayland
+media-sound/pulseaudio gnome
+sys-apps/dbus user-session
+sys-libs/tdb python
+sys-libs/tevent python
+sys-libs/zlib minizip
