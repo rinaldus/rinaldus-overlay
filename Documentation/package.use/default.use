@@ -3,7 +3,6 @@ app-admin/conky curl lua
 app-arch/engrampa caja
 app-editors/vim python
 app-emulation/virtualbox extensions
-app-emulation/wine staging s3tc
 app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
 app-text/atril djvu epub
@@ -11,6 +10,7 @@ dev-python/PyQt5 examples designer webkit webchannel websockets webengine
 dev-qt/designer webkit
 dev-qt/qt-creator python
 dev-util/geany-plugins python markdown
+kde-plasma/plasma-desktop gtk2 gtk3 legacy-systray
 mail-client/claws-mail webkit
 mail-client/evolution spamassassin -bogofilter
 mail-filter/spamassassin cron
