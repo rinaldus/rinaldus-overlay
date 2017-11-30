@@ -1,10 +1,12 @@
 app-crypt/pinentry gnome-keyring
 dev-lang/python sqlite
+dev-libs/libdbusmenu gtk3
 dev-libs/libxml2 icu
 dev-qt/qtcore icu
 dev-qt/qtgui:5 egl
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine widgets
+dev-qt/qtwebkit printsupport
 gnome-base/gnome-control-center networkmanager
 gnome-extra/evolution-data-server vala
 mate-base/mate-menus python
@@ -15,6 +17,7 @@ media-libs/libmediaart -qt5
 media-libs/libvpx svc
 media-libs/mesa wayland
 media-sound/pulseaudio gnome
+net-wireless/bluez user-session
 sys-apps/dbus user-session
 sys-libs/tdb python
 sys-libs/tevent python
