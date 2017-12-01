@@ -17,6 +17,7 @@ media-libs/libmediaart -qt5
 media-libs/libvpx svc
 media-libs/mesa wayland gles2
 media-sound/pulseaudio gnome
+net-fs/samba client winbind
 net-wireless/bluez user-session
 sys-apps/dbus user-session
 sys-libs/tdb python
