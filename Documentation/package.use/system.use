@@ -16,6 +16,7 @@ media-libs/harfbuzz icu
 media-libs/libmediaart -qt5
 media-libs/libvpx svc
 media-libs/mesa wayland gles2
+media-libs/sdl2-mixer mod
 media-sound/pulseaudio gnome
 net-fs/samba client winbind
 net-wireless/bluez user-session
