@@ -30,6 +30,7 @@ net-p2p/syncthing-gtk inotify
 sys-block/gparted fat
 virtual/ffmpeg vaapi threads vdpau
 www-client/chromium proprietary-codecs
+www-client/firefox pgo hwaccel
 www-client/links -X
 www-client/w3m -X -gtk
 x11-drivers/nvidia-drivers multilib gtk2 uvm
