@@ -1,3 +1,2 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
-=app-portage/eix-0.33.0 # (https://www.linux.org.ru/forum/general/13723817)
-=app-shells/push-3.0
+=dev-util/ragel-7.0.0.10-r1 # (https://bugs.gentoo.org/440602)
