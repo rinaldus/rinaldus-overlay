@@ -23,6 +23,7 @@ media-sound/pulseaudio gnome
 net-fs/samba client winbind
 net-wireless/bluez user-session
 sys-apps/dbus user-session
+sys-boot/grub mount
 sys-libs/tdb python
 sys-libs/tevent python
 sys-libs/zlib minizip
