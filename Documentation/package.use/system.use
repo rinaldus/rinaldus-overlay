@@ -1,10 +1,12 @@
 app-crypt/pinentry gnome-keyring
 app-misc/tracker gstreamer
+app-office/libreoffice -bluetooth
 dev-lang/python sqlite
 dev-libs/libdbusmenu gtk3
 dev-libs/libgdata gnome-online-accounts
 dev-libs/libxml2 icu
 dev-libs/libxslt python
+dev-python/PyQt5 -bluetooth
 dev-qt/qtcore icu
 dev-qt/qtgui:5 egl
 dev-qt/qtwebchannel qml
@@ -20,9 +22,11 @@ media-libs/libmediaart -qt5
 media-libs/libmypaint gegl
 media-libs/libvpx svc
 media-libs/mesa wayland gles2
+media-libs/sdl-mixer mod
 media-libs/sdl2-mixer mod
 media-plugins/grilo-plugins tracker
 media-sound/pulseaudio gnome
+media-video/ffmpeg nvenc
 net-fs/samba client winbind
 net-wireless/bluez user-session
 sys-apps/dbus user-session
