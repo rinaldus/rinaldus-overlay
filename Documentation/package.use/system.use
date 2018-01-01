@@ -1,6 +1,8 @@
 app-crypt/pinentry gnome-keyring
+app-misc/tracker gstreamer
 dev-lang/python sqlite
 dev-libs/libdbusmenu gtk3
+dev-libs/libgdata gnome-online-accounts
 dev-libs/libxml2 icu
 dev-libs/libxslt python
 dev-qt/qtcore icu
@@ -19,6 +21,7 @@ media-libs/libmypaint gegl
 media-libs/libvpx svc
 media-libs/mesa wayland gles2
 media-libs/sdl2-mixer mod
+media-plugins/grilo-plugins tracker
 media-sound/pulseaudio gnome
 net-fs/samba client winbind
 net-wireless/bluez user-session
