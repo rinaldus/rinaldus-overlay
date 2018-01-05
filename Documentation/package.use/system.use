@@ -34,4 +34,5 @@ sys-boot/grub mount
 sys-libs/tdb python
 sys-libs/tevent python
 sys-libs/zlib minizip
+www-servers/apache apache2_modules_auth_digest
 x11-base/xorg-server xvfb
