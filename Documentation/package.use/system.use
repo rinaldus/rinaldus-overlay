@@ -2,6 +2,7 @@ app-crypt/pinentry gnome-keyring
 app-misc/tracker gstreamer
 app-office/libreoffice -bluetooth
 dev-lang/python sqlite
+dev-libs/keybinder python
 dev-libs/libdbusmenu gtk3
 dev-libs/libgdata gnome-online-accounts
 dev-libs/libxml2 icu
