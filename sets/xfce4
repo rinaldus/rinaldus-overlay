@@ -2,6 +2,7 @@ xfce-base/xfce4-meta
 xfce-extra/xfce4-cpugraph-plugin
 xfce-extra/xfce4-mpc-plugin
 xfce-extra/xfce4-notifyd
+xfce-extra/xfce4-power-manager
 xfce-extra/xfce4-pulseaudio-plugin
 xfce-extra/xfce4-systemload-plugin
 xfce-extra/xfce4-volumed-pulse
