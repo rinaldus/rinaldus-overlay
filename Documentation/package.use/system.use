@@ -7,6 +7,7 @@ dev-libs/libdbusmenu gtk3
 dev-libs/libgdata gnome-online-accounts
 dev-libs/libxml2 icu
 dev-libs/libxslt python
+dev-libs/xmlsec nss
 dev-python/PyQt5 -bluetooth
 dev-qt/qtcore icu
 dev-qt/qtgui:5 egl
