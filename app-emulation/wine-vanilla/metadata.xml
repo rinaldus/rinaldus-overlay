@@ -4,13 +4,17 @@
 	<maintainer type="project">
 		<email>wine@gentoo.org</email>
 		<name>Wine</name>
+		<description>
+			This package must be kept in sync with repo/proj/wine repository.
+			Any changes need to be run past the maintainer to ensure the two repositories are kept in sync.
+		</description>
 	</maintainer>
 	<longdescription>
 Wine is an Open Source implementation of the Windows API on top of X and Unix.
 
 Think of Wine as a compatibility layer for running Windows programs. Wine does not require Microsoft Windows, as it is a completely free alternative implementation of the Windows API consisting of 100% non-Microsoft code, however Wine can optionally use native Windows DLLs if they are available. Wine provides both a development toolkit for porting Windows source code to Unix as well as a program loader, allowing many unmodified Windows programs to run on x86-based Unixes, including Linux, FreeBSD, and Solaris.
 
-This variant of the Wine packaging includes the Wine-Staging patchset.
+This variant of the Wine packaging does not include external patchsets
 	</longdescription>
 	<use>
 		<flag name="capi">Enable ISDN support via CAPI</flag>
@@ -24,17 +28,13 @@ This variant of the Wine packaging includes the Wine-Staging patchset.
 		<flag name="osmesa">Add support for OpenGL in bitmaps using libOSMesa</flag>
 		<flag name="pcap">Support packet capture software (e.g. wireshark)</flag>
 		<flag name="perl">Install helpers written in perl (winedump/winemaker)</flag>
-		<flag name="pipelight">Apply Wine-Staging patches for Pipelight/Silverlight support</flag>
 		<flag name="prelink">Run prelink on DLLs during build;
 			For versions before wine-1.7.55 or hardened, do not disable if you do not know what this means as it can break things at runtime</flag>
 		<flag name="realtime">Pull in <pkg>sys-auth/rtkit</pkg> for low-latency pulseaudio support</flag>
 		<flag name="run-exes">Use Wine to open and run .EXE and .MSI files</flag>
-		<flag name="s3tc">Pull in <pkg>media-libs/libtxc_dxtn</pkg> for DXTn texture compression, needed for many games</flag>
 		<flag name="samba">Add support for NTLM auth. see
 		http://wiki.winehq.org/NtlmAuthSetupGuide and
 		http://wiki.winehq.org/NtlmSigningAndSealing</flag>
-		<flag name="staging">Apply Wine-Staging patches for advanced feature support that haven't made it into upstream Wine yet</flag>
-		<flag name="themes">Support GTK+:3 window theming through Wine-Staging</flag>
 		<flag name="udev">Use <pkg>virtual/libudev</pkg> to provide plug and play support</flag>
 	</use>
 	<upstream>
