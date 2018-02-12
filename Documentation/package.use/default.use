@@ -22,7 +22,7 @@ media-sound/shntool alac mac wavpack
 media-video/ffmpeg vaapi vdpau threads
 media-video/makemkv -qt4
 media-video/smplayer -qt4 linguas_ru_RU
-media-video/vlc upnp vdpau vaapi lua rtsp vlm httpd qt4 -qt5 ffmpeg postproc
+media-video/vlc upnp vdpau vaapi lua rtsp vlm httpd qt5 ffmpeg postproc
 net-analyzer/vnstat gd
 net-im/psi extras iconsets plugins webkit -qt5
 net-libs/ccnet client python
