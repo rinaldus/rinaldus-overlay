@@ -1,3 +1,4 @@
 # This file contains list of packages which impossible to compile due to any bugs. If this file is empty, then everything is ok.
 =dev-util/ragel-7.0.0.10-r1 # (https://bugs.gentoo.org/440602)
 =media-tv/v4l-utils-1.14.1 # (https://bugs.gentoo.org/644464)
+=dev-python/PyQt5-5.10.1 # (https://bugs.gentoo.org/649600)
