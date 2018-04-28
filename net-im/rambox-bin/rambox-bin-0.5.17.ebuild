@@ -10,7 +10,7 @@ MY_PN=${PN/-bin}
 DESCRIPTION="Free and Open Source messaging and emailing app"
 HOMEPAGE="http://rambox.pro/"
 SRC_URI="amd64? ( https://github.com/saenzramiro/${MY_PN}/releases/download/${PV}/${MY_PN^}-${PV}-x64.rpm -> ${P}-x64.rpm )
-	x86? ( https://github.com/saenzramiro/${MY_PN}/releases/download/${PV}/${MY_PN^}-${PV}-ia32.rpm -> ${P}-ia32.rpm )"
+	x86? ( https://github.com/saenzramiro/${MY_PN}/releases/download/${PV}/${MY_PN^}-${PV}-ia32.tar.gz -> ${P}-ia32.tar.gz )"
 
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
