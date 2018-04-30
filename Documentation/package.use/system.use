@@ -23,6 +23,7 @@ media-libs/grilo playlist
 media-libs/harfbuzz icu
 media-libs/libmediaart -qt5
 media-libs/libmypaint gegl
+media-libs/libsdl2 haptic
 media-libs/libvpx svc
 media-libs/mesa wayland gles2
 media-libs/sdl-mixer mod
