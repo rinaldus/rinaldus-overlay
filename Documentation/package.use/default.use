@@ -3,6 +3,7 @@ app-admin/conky curl lua
 app-arch/engrampa caja
 app-editors/vim python
 app-emulation/virtualbox extensions
+app-emulation/wine-staging vulkan
 app-portage/eix optimization strong-optimization
 app-portage/layman mercurial sync-plugin-portage
 app-text/atril djvu epub
@@ -16,6 +17,7 @@ mail-client/evolution spamassassin -bogofilter
 mail-filter/spamassassin cron
 media-gfx/gimp -webkit
 media-gfx/imagemagick -pdf
+media-libs/vulkan-loader demos layers
 media-sound/cantata cddb -cdio musicbrainz replaygain
 media-sound/deadbeef ape -cdda gtk3 lastfm cover curl m3u notify wavpack wma
 media-sound/shntool alac mac wavpack
