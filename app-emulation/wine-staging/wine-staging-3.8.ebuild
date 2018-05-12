@@ -44,11 +44,12 @@ fi
 
 LICENSE="LGPL-2.1"
 SLOT="${PV}"
-IUSE="+abi_x86_32 +abi_x86_64 +alsa capi cups custom-cflags dos elibc_glibc +fontconfig +gecko gphoto2 gsm gstreamer +jpeg kerberos kernel_FreeBSD +lcms ldap +mono mp3 ncurses netapi nls odbc openal opencl +opengl osmesa oss +perl pcap +png prelink pulseaudio +realtime +run-exes s3tc samba scanner selinux +ssl staging test themes +threads +truetype udev +udisks v4l vaapi vulkan +X +xcomposite xinerama +xml"
+IUSE="+abi_x86_32 +abi_x86_64 +alsa capi cups custom-cflags dos elibc_glibc +fontconfig +gecko gphoto2 gsm gssapi gstreamer +jpeg kerberos kernel_FreeBSD +lcms ldap +mono mp3 ncurses netapi nls odbc openal opencl +opengl osmesa oss +perl pcap pipelight +png prelink pulseaudio +realtime +run-exes s3tc samba scanner sdl selinux +ssl staging test themes +threads +truetype udev +udisks v4l vaapi vulkan +X +xcomposite xinerama +xml"
 REQUIRED_USE="|| ( abi_x86_32 abi_x86_64 )
 	X? ( truetype )
 	elibc_glibc? ( threads )
 	osmesa? ( opengl )
+	pipelight? ( staging )
 	s3tc? ( staging )
 	test? ( abi_x86_32 )
 	themes? ( staging )
@@ -73,6 +74,7 @@ COMMON_DEPEND="
 	fontconfig? ( media-libs/fontconfig:=[${MULTILIB_USEDEP}] )
 	gphoto2? ( media-libs/libgphoto2:=[${MULTILIB_USEDEP}] )
 	gsm? ( media-sound/gsm:=[${MULTILIB_USEDEP}] )
+	gssapi? ( virtual/krb5[${MULTILIB_USEDEP}] )
 	gstreamer? (
 		media-libs/gstreamer:1.0[${MULTILIB_USEDEP}]
 		media-plugins/gst-plugins-meta:1.0[${MULTILIB_USEDEP}]
@@ -97,6 +99,7 @@ COMMON_DEPEND="
 	png? ( media-libs/libpng:0=[${MULTILIB_USEDEP}] )
 	pulseaudio? ( media-sound/pulseaudio[${MULTILIB_USEDEP}] )
 	scanner? ( media-gfx/sane-backends:=[${MULTILIB_USEDEP}] )
+	sdl? ( media-libs/libsdl2:=[haptic,joystick,${MULTILIB_USEDEP}] )
 	ssl? ( net-libs/gnutls:=[${MULTILIB_USEDEP}] )
 	staging? ( sys-apps/attr[${MULTILIB_USEDEP}] )
 	themes? (
@@ -115,22 +118,6 @@ COMMON_DEPEND="
 	xml? (
 		dev-libs/libxml2[${MULTILIB_USEDEP}]
 		dev-libs/libxslt[${MULTILIB_USEDEP}]
-	)
-	abi_x86_32? (
-		!app-emulation/emul-linux-x86-baselibs[-abi_x86_32(-)]
-		!<app-emulation/emul-linux-x86-baselibs-20140508-r14
-		!app-emulation/emul-linux-x86-db[-abi_x86_32(-)]
-		!<app-emulation/emul-linux-x86-db-20140508-r3
-		!app-emulation/emul-linux-x86-medialibs[-abi_x86_32(-)]
-		!<app-emulation/emul-linux-x86-medialibs-20140508-r6
-		!app-emulation/emul-linux-x86-opengl[-abi_x86_32(-)]
-		!<app-emulation/emul-linux-x86-opengl-20140508-r1
-		!app-emulation/emul-linux-x86-sdl[-abi_x86_32(-)]
-		!<app-emulation/emul-linux-x86-sdl-20140508-r1
-		!app-emulation/emul-linux-x86-soundlibs[-abi_x86_32(-)]
-		!<app-emulation/emul-linux-x86-soundlibs-20140508
-		!app-emulation/emul-linux-x86-xlibs[-abi_x86_32(-)]
-		!<app-emulation/emul-linux-x86-xlibs-20140508
 	)"
 
 RDEPEND="${COMMON_DEPEND}
@@ -158,17 +145,13 @@ DEPEND="${COMMON_DEPEND}
 	>=sys-kernel/linux-headers-2.6
 	virtual/pkgconfig
 	virtual/yacc
-	X? (
-		x11-proto/inputproto
-		x11-proto/xextproto
-		x11-proto/xf86vidmodeproto
-	)
+	X? ( x11-base/xorg-proto )
 	prelink? ( sys-devel/prelink )
 	staging? (
 		dev-lang/perl
 		dev-perl/XML-Simple
 	)
-	xinerama? ( x11-proto/xineramaproto )"
+	xinerama? ( x11-base/xorg-proto )"
 
 # These use a non-standard "Wine" category, which is provided by
 # /etc/xdg/applications-merged/wine.menu
@@ -182,7 +165,6 @@ PATCHES=(
 	"${PATCHDIR}/patches/${MY_PN}-1.9.5-multilib-portage.patch" #395615
 	"${PATCHDIR}/patches/${MY_PN}-1.6-memset-O3.patch" #480508
 	"${PATCHDIR}/patches/${MY_PN}-2.0-multislot-apploader.patch" #310611
-#	"${PATCHDIR}/patches/${MY_PN}-2.0-rearrange-manpages.patch" #469418 #617864
 )
 PATCHES_BIN=()
 
@@ -367,10 +349,8 @@ src_prepare() {
 		ewarn "Applying the Wine-Staging patchset. Any bug reports to the"
 		ewarn "Wine bugzilla should explicitly state that staging was used."
 
-		# I disabled STAGING_EXCLUDE because the flex's bug was fixed in flex 2.6.4 and Pipelight is discontinued since long time ago.
-#		local STAGING_EXCLUDE=""
-#		STAGING_EXCLUDE="${STAGING_EXCLUDE} -W winhlp32-Flex_Workaround" # Avoid double patching https://bugs.winehq.org/show_bug.cgi?id=42132
-#		use pipelight || STAGING_EXCLUDE="${STAGING_EXCLUDE} -W Pipelight"
+		local STAGING_EXCLUDE=""
+		use pipelight || STAGING_EXCLUDE="${STAGING_EXCLUDE} -W Pipelight"
 
 		# Launch wine-staging patcher in a subshell, using eapply as a backend, and gitapply.sh as a backend for binary patches
 		ebegin "Running Wine-Staging patch installer"
@@ -405,7 +385,6 @@ src_prepare() {
 	l10n_get_locales > po/LINGUAS || die # otherwise wine doesn't respect LINGUAS
 
 	# Fix manpage generation for locales #469418 and abi_x86_64 #617864
-	# Requires wine-2.0-rearrange-manpages.patch
 
 	# Duplicate manpages input files for wine64
 	local f
@@ -452,7 +431,6 @@ multilib_src_configure() {
 		--localstatedir="${MY_LOCALSTATEDIR}"
 		--mandir="${MY_MANDIR}"
 		--sysconfdir=/etc/wine
-		--disable-tests
 		$(use_with alsa)
 		$(use_with capi)
 		$(use_with lcms cms)
@@ -464,6 +442,7 @@ multilib_src_configure() {
 		$(use_enable gecko mshtml)
 		$(use_with gphoto2 gphoto)
 		$(use_with gsm)
+		$(use_with gssapi)
 		$(use_with gstreamer)
 		--without-hal
 		$(use_with jpeg)
@@ -483,6 +462,7 @@ multilib_src_configure() {
 		$(use_with pulseaudio pulse)
 		$(use_with threads pthread)
 		$(use_with scanner sane)
+		$(use_with sdl)
 		$(use_enable test tests)
 		$(use_with truetype freetype)
 		$(use_with udev)
